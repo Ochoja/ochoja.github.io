@@ -10,15 +10,29 @@
   <body>
     <header class="header">
       <nav>
-        <img src="/images/EnterpriseNGRLogo.png" alt="EnterpriseNGR Logo" />
-        <ul>
-          <li>About Us</li>
-          <li>Membership</li>
-          <li>Policy & Research</li>
-          <li>Youth of Enterprise</li>
-          <li>Media and Events</li>
-          <li>Contact Us</li>
-        </ul>
+        <div class="logo">
+          <img src="/images/EnterpriseNGRLogo.png" alt="EnterpriseNGR Logo" />
+        </div>
+        <div class="nav-items">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <a href="about.html">About Us</a>
+            </button>
+            <div class="dropdown-content">
+              <a href="agenda.html">Our Agenda</a>
+              <a href="#">Our Work</a>
+              <a href="#">Leadership</a>
+            </div>
+          </div>
+          <a href="agenda.html">Our Agenda</a>
+          <a href="#home">Our Work</a>
+          <a href="#news">Leadership</a>
+          <a href="#news">Policy & Research</a>
+          <a href="#news">Youth of Enterprise</a>
+          <a href="#news">Media and Events</a>
+          <a href="#news">Contact Us</a>
+        </div>
+        <div class="icon">Menu</div>
       </nav>
 
       <div class="landing_page">
@@ -416,5 +430,6 @@
       </div>
     </footer>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
