@@ -133,7 +133,3 @@ $accent-color: #40ba7b;
     color: $accent-color;
   }
 }
-
-@mixin transition-ease {
-  transition: all 0.6s ease-in-out;
-}

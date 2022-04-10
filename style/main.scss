@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,500&display=swap");
 @import "agenda";
 @import "about";
+@import "mixins";
 $accent-color: #40ba7b;
 
 * {
@@ -147,85 +148,89 @@ body {
         }
       }
     }
-  }
 
-  .btn-menu {
-    visibility: hidden;
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 26px;
-    padding-left: 0;
-    padding-right: 0;
-    border: none;
-    background-color: transparent;
-    color: inherit;
-    cursor: pointer;
-    transition: 0.3s ease;
+    .menu-btn {
+      visibility: hidden;
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 30px;
+      transition: all 0.5s ease-in-out;
 
-    &:focus {
-      outline: none;
-    }
+      &_burger {
+        width: 35px;
+        height: 4px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(64, 186, 123, 0);
+        transition: all 0.5s ease-in-out;
+      }
 
-    &__bars {
-      display: block;
-      position: relative;
-      width: 35px;
-      height: 4px;
-      background-color: $accent-color;
-      transition: 0.3s;
-
-      &:before,
-      &:after {
+      &_burger::before,
+      &_burger::after {
         content: "";
-        display: block;
         position: absolute;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $accent-color;
-        transition: 0.3s;
+        width: 35px;
+        height: 4px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(64, 186, 123, 0);
+        transition: all 0.5s ease-in-out;
       }
 
-      &:before {
-        transform: translate(0, -11px);
+      &_burger::before {
+        transform: translateY(-16px);
       }
 
-      &:after {
-        transform: translate(0, 11px);
+      &_burger::after {
+        transform: translateY(16px);
       }
     }
 
-    .menu-open & {
-      .btn-menu__bars {
-        background-color: transparent;
+    .menu-btn.open .menu-btn_burger {
+      transform: translateX(-50px);
+      background: transparent;
+      box-shadow: none;
+    }
 
-        &:before {
-          transform: rotate(45deg);
-        }
+    .menu-btn.open .menu-btn_burger::before {
+      transform: rotate(45deg) translate(35px, -35px);
+    }
 
-        &:after {
-          transform: rotate(-45deg);
-        }
-      }
+    .menu-btn.open .menu-btn_burger::after {
+      transform: rotate(-45deg) translate(35px, 35px);
     }
   }
 
   @media screen and (max-width: 1172px) {
     .header {
       nav {
-        border-bottom: none;
         ul {
-          display: none;
+          border-bottom: none;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          height: 100vh;
+          transform: translateX(100vw);
+          background-color: #016937;
+
+          img {
+            display: none;
+          }
         }
       }
-    }
-
-    .btn-menu {
-      visibility: visible;
+      .menu-items.open {
+        transform: translateX(0);
+      }
+      .menu-btn {
+        visibility: visible;
+      }
     }
   }
 

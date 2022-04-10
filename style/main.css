@@ -487,89 +487,102 @@ body .header nav .dropdown-content li a {
   color: #ffffff;
 }
 
-body .btn-menu {
+body .header .menu-btn {
   visibility: hidden;
   position: absolute;
-  right: 2rem;
-  top: 2rem;
+  top: 30px;
+  right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 26px;
-  padding-left: 0;
-  padding-right: 0;
-  border: none;
-  background-color: transparent;
-  color: inherit;
-  cursor: pointer;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-body .btn-menu:focus {
-  outline: none;
-}
-
-body .btn-menu__bars {
-  display: block;
-  position: relative;
+body .header .menu-btn_burger {
   width: 35px;
   height: 4px;
-  background-color: #40ba7b;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(64, 186, 123, 0);
+          box-shadow: 0 2px 5px rgba(64, 186, 123, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-body .btn-menu__bars:before, body .btn-menu__bars:after {
+body .header .menu-btn_burger::before, body .header .menu-btn_burger::after {
   content: "";
-  display: block;
   position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #40ba7b;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  width: 35px;
+  height: 4px;
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(64, 186, 123, 0);
+          box-shadow: 0 2px 5px rgba(64, 186, 123, 0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-body .btn-menu__bars:before {
-  -webkit-transform: translate(0, -11px);
-          transform: translate(0, -11px);
+body .header .menu-btn_burger::before {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
 }
 
-body .btn-menu__bars:after {
-  -webkit-transform: translate(0, 11px);
-          transform: translate(0, 11px);
+body .header .menu-btn_burger::after {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
 }
 
-.menu-open body .btn-menu .btn-menu__bars {
-  background-color: transparent;
+body .header .menu-btn.open .menu-btn_burger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.menu-open body .btn-menu .btn-menu__bars:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+body .header .menu-btn.open .menu-btn_burger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
 }
 
-.menu-open body .btn-menu .btn-menu__bars:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+body .header .menu-btn.open .menu-btn_burger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
 }
 
 @media screen and (max-width: 1172px) {
-  body .header nav {
-    border-bottom: none;
-  }
   body .header nav ul {
+    border-bottom: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+    background-color: #016937;
+  }
+  body .header nav ul img {
     display: none;
   }
-  body .btn-menu {
+  body .header .menu-items.open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  body .header .menu-btn {
     visibility: visible;
   }
 }

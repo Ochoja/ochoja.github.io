@@ -1,9 +1,14 @@
-var btnMenu = document.getElementsByClassName("btn-menu");
-console.log(btnMenu);
-var body = document.body;
-for (var i = 0; i < btnMenu.length; i++) {
-  btnMenu[i].addEventListener("click", () => {
-    body.classList.toggle("menu-open");
-    // console.log(btnMenu[i].classList);
-  });
-}
+const menuBtn = document.querySelector(".menu-btn");
+const menuItems = document.querySelector(".menu-items");
+let menuOpen = false;
+
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+  }
+  menuItems.classList.toggle("open");
+});
