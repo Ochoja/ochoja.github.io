@@ -413,6 +413,18 @@ body .bold {
   body .md_heading {
     width: 98%;
   }
+  body .big_btn {
+    font-weight: 600;
+    padding: 7px;
+    border-radius: 7px;
+    margin-right: 20px;
+    border: none;
+    background-color: #40ba7b;
+    color: white;
+  }
+  body .btn_work {
+    padding: 15px;
+  }
 }
 
 body .header {
@@ -526,6 +538,10 @@ body .header .nav-items.responsive {
     position: absolute;
     top: 10px;
     right: 10px;
+    cursor: pointer;
+  }
+  body .header nav .iconify-inline.hamburger {
+    background: transparent;
   }
   body .header .nav-items {
     display: none;
