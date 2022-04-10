@@ -624,6 +624,12 @@ body .landing_page p {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  body .landing_page p {
+    width: 90%;
+  }
+}
+
 body .economy {
   background: url(/images/landingpagebg.png) no-repeat top right;
   width: 80%;
@@ -1110,7 +1116,7 @@ body footer .privacy_policy {
     font-size: 1.3em;
   }
   body .heading {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
