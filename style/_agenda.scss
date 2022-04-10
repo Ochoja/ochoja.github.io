@@ -1,0 +1,77 @@
+@import "mixins";
+
+.economy {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      margin-left: 0px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    .iconify {
+      position: relative;
+      top: 8px;
+    }
+  }
+}
+
+.agenda_news {
+  background: url(/images/member.png) no-repeat center bottom;
+  @include latest;
+}
+
+.agenda_member {
+  @include member;
+}
+
+@media (max-width: 1200px) {
+  .agenda_member {
+    .membership {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .agenda_member {
+    .membership {
+      padding: 50px 20px;
+
+      &_text {
+        grid-template-columns: 1fr;
+
+        button {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+.key_focus {
+  @include black_green;
+  color: white;
+  background: #858585;
+  background: linear-gradient(
+      175deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(17, 1, 1, 0) 100%
+    ),
+    url(/images/bottom.png) no-repeat bottom right;
+
+  .number_cards {
+    @include number_cards;
+  }
+}
+
+.action_words {
+  width: 75%;
+  margin: auto;
+  .number_cards {
+    @include number_cards;
+  }
+}
