@@ -243,6 +243,13 @@ body {
     }
 
     @media screen and (max-width: 716px) {
+      nav {
+        img {
+          width: 100px;
+          height: 50px;
+        }
+      }
+
       .nav-items.responsive {
         display: block;
         width: 80vw;

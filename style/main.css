@@ -562,6 +562,10 @@ body .header .nav-items.responsive {
 }
 
 @media screen and (max-width: 716px) {
+  body .header nav img {
+    width: 100px;
+    height: 50px;
+  }
   body .header .nav-items.responsive {
     display: block;
     width: 80vw;
