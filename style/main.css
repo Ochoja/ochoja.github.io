@@ -951,6 +951,130 @@ nav .content .links {
   margin-bottom: 50px;
 }
 
+.landing_page .contact.heading {
+  width: 100%;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.landing_page .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.landing_page .grid .form {
+  width: 80%;
+  margin: auto;
+  background: #40ba7b;
+  border-radius: 20px;
+  padding: 20px 0 20px 20px;
+}
+
+.landing_page .grid .form .md_btn {
+  width: 90%;
+  margin: auto;
+}
+
+.landing_page .grid .form label,
+.landing_page .grid .form input {
+  display: block;
+}
+
+.landing_page .grid .form label {
+  padding-bottom: 4px;
+}
+
+.landing_page .grid .form input {
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.landing_page .grid .form textarea {
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.landing_page .grid .form button {
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  font-size: 0.97em;
+  font-weight: 600;
+  margin-top: 12px;
+  border-radius: 4px;
+  border: none;
+  color: #40ba7b;
+}
+
+@media screen and (max-width: 1111px) {
+  .grid {
+    grid-column-gap: 30px;
+  }
+  .grid .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .landing_page .grid {
+    display: block;
+  }
+  .landing_page .grid .form {
+    display: none;
+  }
+}
+
+.iconify.social {
+  position: relative;
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+.iconify.social:hover {
+  color: #40ba7b;
+  cursor: pointer;
+}
+
+.contact_icons {
+  margin-top: 30px;
+}
+
+.contact_icons_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.contact_icons .icon_item {
+  font-size: 1.4em;
+  color: white;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.contact_icons .icon_item a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact_icons .social_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+
+.contact_icons .social_icons .item {
+  margin-right: 10px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

@@ -1,0 +1,121 @@
+.landing_page {
+  .contact.heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 50px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+    .form {
+      width: 80%;
+      margin: auto;
+      background: #40ba7b;
+      border-radius: 20px;
+      padding: 20px 0 20px 20px;
+
+      .md_btn {
+        width: 90%;
+        margin: auto;
+      }
+
+      label,
+      input {
+        display: block;
+      }
+
+      label {
+        padding-bottom: 4px;
+      }
+
+      input {
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+      }
+
+      textarea {
+        border-radius: 5px;
+        padding: 5px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      button {
+        font-family: "Roboto", sans-serif;
+        padding: 10px;
+        font-size: 0.97em;
+        font-weight: 600;
+        margin-top: 12px;
+        border-radius: 4px;
+        border: none;
+        color: #40ba7b;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1111px) {
+  .grid {
+    grid-column-gap: 30px;
+    .form {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .landing_page {
+    .grid {
+      display: block;
+      .form {
+        display: none;
+      }
+    }
+  }
+}
+
+.iconify.social {
+  position: relative;
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+.iconify.social:hover {
+  color: #40ba7b;
+  cursor: pointer;
+}
+
+.contact_icons {
+  margin-top: 30px;
+
+  &_item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .icon_item {
+    font-size: 1.4em;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .social_icons {
+    display: flex;
+    padding-top: 50px;
+
+    .item {
+      margin-right: 10px;
+    }
+  }
+}
