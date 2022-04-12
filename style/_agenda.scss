@@ -1,26 +1,17 @@
 @import "mixins";
 
 .economy {
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-
-    li {
-      margin-left: 0px;
-      font-weight: 300;
-      margin-bottom: 10px;
-    }
-
-    .iconify {
-      position: relative;
-      top: 8px;
-    }
-  }
+  @include icon_list;
 }
 
-.agenda_news {
+.agenda_wrapper {
+  width: 100%;
   background: url(/images/member.png) no-repeat center bottom;
-  @include latest;
+  background-size: cover;
+  padding-top: 20px;
+  .agenda_news {
+    @include latest;
+  }
 }
 
 .agenda_member {

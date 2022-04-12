@@ -72,6 +72,12 @@ $accent-color: #40ba7b;
       }
     }
   }
+
+  @media (max-width: 718px) {
+    .news {
+      width: 65%;
+    }
+  }
 }
 
 @mixin member {
@@ -132,4 +138,68 @@ $accent-color: #40ba7b;
   .md_heading {
     color: $accent-color;
   }
+}
+
+@mixin icon_list {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      margin-left: 10px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    .iconify {
+      position: relative;
+      top: 8px;
+    }
+  }
+}
+
+@mixin icon_list_sm {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 50%;
+    margin-bottom: 20px;
+
+    li {
+      display: grid;
+      grid-template-columns: 1fr 9fr;
+      margin-left: 10px;
+      font-weight: 300;
+      margin-bottom: 10px;
+
+      .text {
+        padding-top: 10px;
+      }
+    }
+
+    .iconify {
+      position: relative;
+      top: 8px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    ul {
+      width: 100%;
+
+      li {
+        .text {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+.md_heading.center.top_margin {
+  width: 63%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
 }
