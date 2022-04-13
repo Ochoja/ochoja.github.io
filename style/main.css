@@ -1132,6 +1132,23 @@ nav .content .links {
   }
 }
 
+.header.news {
+  height: auto;
+}
+
+.media_events.news {
+  background: white;
+}
+
+.mini_grid .cards {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.mini_grid .cards .card {
+  margin-bottom: 40px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

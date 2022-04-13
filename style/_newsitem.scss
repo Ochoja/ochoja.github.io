@@ -1,0 +1,17 @@
+.header.news {
+  height: auto;
+}
+
+.media_events.news {
+  background: white;
+}
+
+.mini_grid {
+  .cards {
+    grid-template-columns: 1fr;
+
+    .card {
+      margin-bottom: 40px;
+    }
+  }
+}
