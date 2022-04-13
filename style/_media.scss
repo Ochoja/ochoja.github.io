@@ -1,0 +1,35 @@
+.media_events {
+  background: url(/images/landingpagebg.png) top center;
+  background-repeat: repeat-x;
+  .grid {
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-gap: 20px;
+    width: 95%;
+    margin: auto;
+    padding: 40px 30px;
+
+    &_item {
+      border-radius: 20px;
+      padding: 35px 40px;
+      background: #016937;
+      color: white;
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .media_events {
+    .grid {
+      grid-template-columns: 1fr;
+      .grid_item.suggested {
+        display: none;
+      }
+    }
+  }
+}

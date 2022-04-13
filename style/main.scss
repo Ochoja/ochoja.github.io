@@ -6,6 +6,7 @@
 @import "nav";
 @import "mixins";
 @import "contact";
+@import "media";
 $accent-color: #40ba7b;
 
 * {
@@ -16,6 +17,12 @@ $accent-color: #40ba7b;
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
+
+  a {
+    button {
+      cursor: pointer;
+    }
+  }
 
   .big_btn {
     font-weight: 600;
@@ -50,6 +57,11 @@ body {
     background-color: white;
     border-radius: 25px;
     margin-right: 5px;
+  }
+
+  .iconify.social {
+    background: transparent;
+    border-radius: 0;
   }
 
   .btn_work {
@@ -763,6 +775,10 @@ body {
       margin-top: 100px;
       display: flex;
       justify-content: flex-end;
+
+      .item {
+        margin-right: 10px;
+      }
     }
   }
 
