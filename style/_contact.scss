@@ -1,10 +1,5 @@
-.landing_page {
-  .contact.heading {
-    width: 100%;
-    text-align: center;
-    margin-top: 90px;
-    margin-bottom: 50px;
-  }
+.contact {
+  padding: 40px 30px;
 
   .grid {
     display: grid;
@@ -12,7 +7,8 @@
     grid-gap: 20px;
 
     .form {
-      width: 80%;
+      color: white;
+      width: 60%;
       margin: auto;
       background: #40ba7b;
       border-radius: 20px;
@@ -59,21 +55,47 @@
   }
 }
 
-@media screen and (max-width: 1111px) {
-  .grid {
-    grid-column-gap: 30px;
-    .form {
-      width: 100%;
+@media screen and (max-width: 1200px) {
+  .contact {
+    .grid {
+      .form {
+        width: 70%;
+      }
     }
   }
 }
 
-@media screen and (max-width: 989px) {
-  .landing_page {
+@media screen and (max-width: 969px) {
+  .contact {
     .grid {
-      display: block;
+      grid-column-gap: 30px;
+      grid-template-columns: 1fr;
+      width: 90%;
+      margin: auto;
       .form {
-        display: none;
+        margin: 10px 0px;
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .contact {
+    .grid {
+      .form {
+        width: 75%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 593px) {
+  .contact {
+    padding: 40px 10px;
+    .grid {
+      .form {
+        width: 100%;
       }
     }
   }
@@ -99,14 +121,18 @@
   }
 
   .icon_item {
-    font-size: 1.4em;
-    color: white;
+    font-size: 1em;
+    // color: white;
     padding-left: 10px;
     padding-top: 5px;
 
     a {
       text-decoration: none;
-      color: white;
+      color: black;
+    }
+
+    a:hover {
+      color: #40ba7b;
     }
   }
 
