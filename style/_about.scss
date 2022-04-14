@@ -4,6 +4,10 @@
   @include member;
 }
 
+.sm_heading.name {
+  font-size: 1.2em;
+}
+
 @media (max-width: 1200px) {
   .about_member {
     .membership {
@@ -22,6 +26,21 @@
 
         button {
           margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+.economy {
+  &_grid {
+    .arrow {
+      li {
+        display: flex;
+
+        .text {
+          padding-top: 12px;
+          padding-left: 6px;
         }
       }
     }
@@ -60,6 +79,22 @@
     .thin {
       color: $accent-color;
       font-weight: 400;
+    }
+  }
+}
+
+.latest_news.hover {
+  img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+}
+
+.latest_news.hover {
+  .card:hover {
+    img {
+      filter: none;
+      -webkit-filter: grayscale(0);
     }
   }
 }
