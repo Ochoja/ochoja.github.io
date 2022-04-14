@@ -1,3 +1,17 @@
+.header.greenstart {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(/images/greenstart.png) center center;
+
+  .heading.green {
+    color: #40ba7b;
+  }
+}
+
 .economy.greenstart {
   .md_heading {
     color: #40ba7b;

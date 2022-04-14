@@ -20,6 +20,7 @@ body {
   letter-spacing: 0.3px;
 
   a {
+    text-decoration: none;
     button {
       cursor: pointer;
     }
@@ -40,6 +41,10 @@ body {
     }
   }
 
+  .big_btn.show {
+    display: none;
+  }
+
   .md_btn {
     font-weight: 600;
     padding: 5px 8px;
@@ -58,6 +63,14 @@ body {
     background-color: white;
     border-radius: 25px;
     margin-right: 5px;
+  }
+
+  .iconify.show {
+    display: none;
+  }
+
+  .iconify-inline.show {
+    display: none;
   }
 
   .iconify-inline.social {
