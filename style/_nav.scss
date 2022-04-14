@@ -68,8 +68,12 @@ nav {
     }
   }
 
-  button,
-  .iconify {
+  .none {
+    display: none;
+    color: green;
+  }
+
+  .iconify.none {
     display: none;
   }
 }

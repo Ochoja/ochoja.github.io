@@ -750,8 +750,11 @@ nav #menu-icon {
   nav #menu-icon {
     display: block;
   }
-  button,
-  .iconify {
+  .none {
+    display: none;
+    color: green;
+  }
+  .iconify.none {
     display: none;
   }
 }
