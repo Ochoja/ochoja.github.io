@@ -1,5 +1,16 @@
 @import "mixins";
 
+.header.bg {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(/images/memberbg.png) no-repeat center fixed;
+  background-size: cover;
+}
+
 .economy.bg_text {
   margin-top: 5px;
 }

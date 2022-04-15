@@ -398,6 +398,12 @@
   margin-bottom: 50px;
 }
 
+.header.bg {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(/images/memberbg.png) no-repeat center fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/images/memberbg.png) no-repeat center fixed;
+  background-size: cover;
+}
+
 .economy.bg_text {
   margin-top: 5px;
 }
@@ -734,7 +740,6 @@ nav #menu-icon {
   }
   nav ul {
     position: fixed;
-    top: 0;
     margin-top: 0;
     height: 100vh;
     width: 100%;
@@ -749,17 +754,17 @@ nav #menu-icon {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    right: -120%;
-    -webkit-transition: all 2s;
-    transition: all 2s;
+    top: -100%;
     overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   nav ul li {
     font-size: 1.3em;
     font-weight: 600;
   }
   nav ul.show {
-    left: 0;
+    top: 0;
   }
   nav #menu-icon {
     display: block;
