@@ -754,7 +754,7 @@ nav #menu-icon {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: -100%;
+    top: -120%;
     overflow: hidden;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
