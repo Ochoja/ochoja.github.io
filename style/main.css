@@ -568,8 +568,9 @@
 }
 
 .header.greenstart {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(/images/greenstart.png) center center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/images/greenstart.png) center center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(/images/greenstart.png) no-repeat center fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/images/greenstart.png) no-repeat center fixed;
+  background-size: cover;
 }
 
 .header.greenstart .heading.green {
@@ -688,8 +689,12 @@ nav img {
 nav ul {
   list-style: none;
   padding: 0;
-  float: right;
   margin-right: 7px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
 }
 
 nav ul a {
@@ -705,13 +710,11 @@ nav ul a:hover {
 }
 
 nav ul li {
-  display: inline-block;
-  line-height: 80px;
   margin: 15px 14px;
 }
 
 nav #menu-icon {
-  position: fixed;
+  position: absolute;
   right: 20px;
   top: 2px;
   color: white;
@@ -732,18 +735,16 @@ nav #menu-icon {
   nav ul {
     position: fixed;
     top: 0;
+    margin-top: 0;
     height: 100vh;
     width: 100%;
-    background: green;
+    background: #38ad71;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -751,6 +752,7 @@ nav #menu-icon {
     right: -120%;
     -webkit-transition: all 2s;
     transition: all 2s;
+    overflow: hidden;
   }
   nav ul li {
     font-size: 1.3em;
@@ -1004,6 +1006,10 @@ nav #menu-icon {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+}
+
+.hidden {
+  overflow: hidden;
 }
 
 body {

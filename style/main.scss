@@ -15,6 +15,10 @@ $accent-color: #40ba7b;
   margin: 0;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
