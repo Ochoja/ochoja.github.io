@@ -690,14 +690,14 @@ nav {
 nav img {
   margin-top: 20px;
   margin-left: 20px;
-  height: 50px;
+  height: 60px;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin-right: 7px;
-  margin-top: 20px;
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1159,6 +1159,11 @@ nav #menu-icon {
 
 .latest_news.media {
   background: url(/images/landingpagebg.png) no-repeat right top;
+}
+
+.latest_news.media .news .cards {
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .latest_news.media .thin.date {
