@@ -1,3 +1,13 @@
+.header.news {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(/images/news.png) no-repeat center fixed;
+}
+
 .latest_news.media {
   background: url(/images/landingpagebg.png) no-repeat right top;
 

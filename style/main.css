@@ -23,6 +23,11 @@
   top: 8px;
 }
 
+.header.agenda {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(/images/agenda.png) no-repeat center fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/images/agenda.png) no-repeat center fixed;
+}
+
 .agenda_wrapper {
   width: 100%;
   background: url(/images/member.png) no-repeat center bottom;
@@ -1009,19 +1014,6 @@ nav #menu-icon {
   color: black;
 }
 
-@media screen and (max-width: 1180px) {
-  .article_header nav {
-    border: none;
-  }
-  .article_header nav img {
-    height: 40px;
-    width: auto;
-  }
-  .article_header nav ul a {
-    color: white;
-  }
-}
-
 .latest_news.newscard {
   background: white;
 }
@@ -1170,6 +1162,47 @@ nav #menu-icon {
   font-family: "Roboto";
 }
 
+@media screen and (max-width: 1180px) {
+  .article {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .article_detail {
+    width: 100%;
+  }
+  .article_body {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .article .image {
+    height: auto;
+    width: 80%;
+  }
+  .article_header nav {
+    border: none;
+  }
+  .article_header nav img {
+    height: 40px;
+    width: auto;
+  }
+  .article_header nav ul a {
+    color: white;
+  }
+  .category {
+    margin: 50px;
+  }
+  .search {
+    display: none;
+  }
+}
+
+.header.news {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(/images/news.png) no-repeat center fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/images/news.png) no-repeat center fixed;
+}
+
 .latest_news.media {
   background: url(/images/landingpagebg.png) no-repeat right top;
 }
@@ -1194,6 +1227,11 @@ nav #menu-icon {
 .latest_news.media .thin.description {
   margin: 0 auto 20px 0;
   padding: 0;
+}
+
+.header.policy {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(/images/policy.png) no-repeat center fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/images/policy.png) no-repeat center fixed;
 }
 
 * {

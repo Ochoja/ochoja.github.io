@@ -4,6 +4,16 @@
   @include icon_list;
 }
 
+.header.agenda {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(/images/agenda.png) no-repeat center fixed;
+}
+
 .agenda_wrapper {
   width: 100%;
   background: url(/images/member.png) no-repeat center bottom;
