@@ -83,21 +83,21 @@
   }
 }
 
-.latest_news.hover {
-  img {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-  }
-}
+// .latest_news.hover {
+//   img {
+//     filter: grayscale(100%);
+//     -webkit-filter: grayscale(100%);
+//   }
+// }
 
-.latest_news.hover {
-  .card:hover {
-    img {
-      filter: none;
-      -webkit-filter: grayscale(0);
-    }
-  }
-}
+// .latest_news.hover {
+//   .card:hover {
+//     img {
+//       filter: none;
+//       -webkit-filter: grayscale(0);
+//     }
+//   }
+// }
 
 .other {
   justify-content: flex-start !important;

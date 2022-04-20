@@ -363,16 +363,6 @@
   font-weight: 400;
 }
 
-.latest_news.hover img {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-}
-
-.latest_news.hover .card:hover img {
-  filter: none;
-  -webkit-filter: grayscale(0);
-}
-
 .other {
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;
@@ -404,8 +394,8 @@
 }
 
 .header.bg {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(/images/memberbg.png) no-repeat center fixed;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/images/memberbg.png) no-repeat center fixed;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(/images/memberbg.png) no-repeat center fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/images/memberbg.png) no-repeat center fixed;
   background-size: cover;
 }
 
@@ -579,8 +569,8 @@
 }
 
 .header.greenstart {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(/images/greenstart.png) no-repeat center fixed;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/images/greenstart.png) no-repeat center fixed;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(/images/greenstart.png) no-repeat center fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/images/greenstart.png) no-repeat center fixed;
   background-size: cover;
 }
 
@@ -1199,8 +1189,8 @@ nav #menu-icon {
 }
 
 .header.news {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(/images/news.png) no-repeat center fixed;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/images/news.png) no-repeat center fixed;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(/images/news.png) no-repeat center fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/images/news.png) no-repeat center fixed;
 }
 
 .latest_news.media {
@@ -1230,8 +1220,8 @@ nav #menu-icon {
 }
 
 .header.policy {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(/images/policy.png) no-repeat center fixed;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(/images/policy.png) no-repeat center fixed;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(/images/policy.png) no-repeat center fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/images/policy.png) no-repeat center fixed;
 }
 
 * {
