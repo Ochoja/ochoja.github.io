@@ -1158,7 +1158,7 @@ nav #menu-icon {
   left: -40px;
   z-index: 1;
   border: none;
-  background: transparent;
+  background: white;
   cursor: pointer;
   padding: 2px;
   font-size: 1.2em;
