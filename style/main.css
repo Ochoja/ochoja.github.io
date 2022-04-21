@@ -1152,6 +1152,18 @@ nav #menu-icon {
   font-family: "Roboto";
 }
 
+.article .search_btn {
+  position: relative;
+  top: 2.5px;
+  left: -40px;
+  z-index: 1;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 2px;
+  font-size: 1.2em;
+}
+
 @media screen and (max-width: 1180px) {
   .article {
     display: -ms-grid;

@@ -144,6 +144,18 @@
       margin-left: 5px;
       font-family: "Roboto";
     }
+
+    &_btn {
+      position: relative;
+      top: 2.5px;
+      left: -40px;
+      z-index: 1;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 2px;
+      font-size: 1.2em;
+    }
   }
 }
 
