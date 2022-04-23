@@ -7,7 +7,7 @@
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.4)
     ),
-    url(/images/memberbg1.png) no-repeat center fixed;
+    url(../images/memberbg1.png) no-repeat center fixed;
   background-size: cover;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .membership_benefit {
-  background: url(/images/memberbenefit.png);
+  background: url(../images/memberbenefit.png);
   @include black_green;
   @include icon_list_sm;
   margin-top: 40px;
@@ -47,7 +47,7 @@
 }
 
 .join {
-  background: url(/images/greeneco.png) bottom;
+  background: url(../images/greeneco.png) bottom;
   padding: 10px 40px;
   color: white;
 
@@ -58,7 +58,7 @@
 }
 
 .membership_category {
-  background: url(/images/greeneco.png) no-repeat top;
+  background: url(../images/greeneco.png) no-repeat top;
   background-size: 100% 60%;
   padding-top: 50px;
   margin-top: 20px;

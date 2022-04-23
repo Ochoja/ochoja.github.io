@@ -142,7 +142,7 @@ body {
 
   .header {
     height: 100vh;
-    background: url(/images/Maskgroup.png) no-repeat center center fixed;
+    background: url(../images/Maskgroup.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -354,7 +354,7 @@ body {
   }
 
   .economy {
-    background: url(/images/landingpagebg.png) no-repeat top right;
+    background: url(../images/landingpagebg.png) no-repeat top right;
     width: 80%;
     margin: auto;
 
@@ -434,7 +434,7 @@ body {
         rgba(0, 0, 0, 0.5),
         rgba(64, 186, 123, 0)
       ),
-      url(/images/Group.png) no-repeat right center;
+      url(../images/Group.png) no-repeat right center;
     color: #ffffff;
     padding: 50px 0 50px 40px;
 
@@ -459,7 +459,7 @@ body {
           rgba(0, 0, 0, 0.5),
           rgba(12, 27, 19, 0.9)
         ),
-        url(/images/Group.png) no-repeat right center;
+        url(../images/Group.png) no-repeat right center;
 
       .thin {
         width: 98%;
@@ -468,7 +468,7 @@ body {
   }
 
   .latest_news {
-    background: url(/images/Layer1.png) no-repeat right top;
+    background: url(../images/Layer1.png) no-repeat right top;
     margin-left: auto;
     padding-bottom: 50px;
 
@@ -479,7 +479,7 @@ body {
 
       .cards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 30px;
         margin-bottom: 50px;
 
@@ -621,7 +621,7 @@ body {
     }
 
     .voice {
-      background: url(/images/voice.png) no-repeat center center;
+      background: url(../images/voice.png) no-repeat center center;
       padding: 30px;
       color: #ffffff;
 
@@ -691,10 +691,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/images/member.png) no-repeat left top;
+    background: url(../images/member.png) no-repeat left top;
 
     .membership {
-      background: url(/images/membership.png) no-repeat center center;
+      background: url(../images/membership.png) no-repeat center center;
       width: 75%;
       margin: auto;
       padding: 50px;

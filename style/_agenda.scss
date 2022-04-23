@@ -11,12 +11,12 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.5)
     ),
-    url(/images/agenda.png) no-repeat center fixed;
+    url(../images/agenda.png) no-repeat center fixed;
 }
 
 .agenda_wrapper {
   width: 100%;
-  background: url(/images/member.png) no-repeat center bottom;
+  background: url(../images/member.png) no-repeat center bottom;
   background-size: cover;
   padding-top: 20px;
   .agenda_news {
@@ -62,7 +62,7 @@
       rgba(0, 0, 0, 1) 50%,
       rgba(17, 1, 1, 0) 100%
     ),
-    url(/images/bottom.png) no-repeat bottom right;
+    url(../images/bottom.png) no-repeat bottom right;
 
   .number_cards {
     @include number_cards;

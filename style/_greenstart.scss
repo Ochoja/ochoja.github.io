@@ -5,7 +5,7 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.5)
     ),
-    url(/images/greenstartbg.png) no-repeat center fixed;
+    url(../images/greenstartbg.png) no-repeat center fixed;
   background-size: cover;
 
   .heading.green {
@@ -37,7 +37,7 @@
 }
 
 .mission_wrapper {
-  background: url(/images/greeneco.png) no-repeat center center;
+  background: url(../images/greeneco.png) no-repeat center center;
   padding: 20px 0;
 
   .economy.mission {
@@ -62,7 +62,7 @@
       rgba(0, 0, 0, 1) 35%,
       rgba(17, 1, 1, 0) 100%
     ),
-    url(/images/Group.png) right bottom;
+    url(../images/Group.png) right bottom;
   @include black_green;
   @include icon_list_sm;
   margin-top: 40px;
