@@ -5,13 +5,7 @@
 }
 
 .header.agenda {
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(../images/agenda.png) no-repeat center fixed;
+  background: url(../images/agenda.png) no-repeat center fixed;
 }
 
 .agenda_wrapper {

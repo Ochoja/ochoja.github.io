@@ -24,8 +24,7 @@
 }
 
 .header.agenda {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))), url(../images/agenda.png) no-repeat center fixed;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/agenda.png) no-repeat center fixed;
+  background: url(../images/agenda.png) no-repeat center fixed;
 }
 
 .agenda_wrapper {
@@ -399,8 +398,7 @@
 }
 
 .header.bg {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4))), url(../images/memberbg1.png) no-repeat center fixed;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../images/memberbg1.png) no-repeat center fixed;
+  background: url(../images/memberbg1.png) no-repeat center fixed;
   background-size: cover;
 }
 
@@ -574,8 +572,7 @@
 }
 
 .header.greenstart {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.5))), url(../images/greenstartbg.png) no-repeat center fixed;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/greenstartbg.png) no-repeat center fixed;
+  background: url(../images/greenstartbg.png) no-repeat center fixed;
   background-size: cover;
 }
 
@@ -1207,8 +1204,7 @@ nav #menu-icon {
 }
 
 .header.news {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4))), url(../images/news.png) no-repeat center fixed;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../images/news.png) no-repeat center fixed;
+  background: url(../images/news.png) no-repeat center fixed;
   background-size: cover;
 }
 
@@ -1239,8 +1235,7 @@ nav #menu-icon {
 }
 
 .header.policy {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), color-stop(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4))), url(../images/policy.png) no-repeat center fixed;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../images/policy.png) no-repeat center fixed;
+  background: url(../images/policy.png) no-repeat center fixed;
   background-size: cover;
 }
 
