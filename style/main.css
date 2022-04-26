@@ -1383,7 +1383,7 @@ body .bold {
 
 body .header {
   height: 100vh;
-  background: url(../images/Maskgroup.png) center center fixed no-repeat;
+  background: url(../images/Maskgroup.png) center center scroll no-repeat;
   background-size: cover;
   /* Navbar container */
 }
