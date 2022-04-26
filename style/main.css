@@ -1177,6 +1177,7 @@ nav #menu-icon {
   }
   .article_detail {
     width: 100%;
+    font-size: 0.87em;
   }
   .article_body {
     width: 100%;
@@ -1198,6 +1199,8 @@ nav #menu-icon {
   }
   .category {
     margin: 50px 20px;
+    width: 98%;
+    font-size: 0.95em;
   }
   .search {
     display: none;
