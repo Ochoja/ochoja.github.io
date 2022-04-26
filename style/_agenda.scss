@@ -5,7 +5,11 @@
 }
 
 .header.agenda {
-  background: url(../images/agenda.png) no-repeat center;
+  background: url(../images/agenda.png) center center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .agenda_wrapper {

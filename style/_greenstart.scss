@@ -1,5 +1,8 @@
 .header.greenstart {
-  background: url(../images/greenstartbg.png) no-repeat center;
+  background: url(../images/greenstartbg.png) center center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 
   .heading.green {

@@ -1,4 +1,7 @@
 .header.policy {
-  background: url(../images/policy.png) no-repeat center;
+  background: url(../images/policy.png) center center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }

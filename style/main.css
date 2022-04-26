@@ -24,7 +24,8 @@
 }
 
 .header.agenda {
-  background: url(../images/agenda.png) no-repeat center fixed;
+  background: url(../images/agenda.png) center center fixed no-repeat;
+  background-size: cover;
 }
 
 .agenda_wrapper {
@@ -398,7 +399,7 @@
 }
 
 .header.bg {
-  background: url(../images/memberbg1.png) no-repeat center fixed;
+  background: url(../images/memberbg1.png) center center fixed no-repeat;
   background-size: cover;
 }
 
@@ -572,7 +573,7 @@
 }
 
 .header.greenstart {
-  background: url(../images/greenstartbg.png) no-repeat center fixed;
+  background: url(../images/greenstartbg.png) center center fixed no-repeat;
   background-size: cover;
 }
 
@@ -1179,7 +1180,7 @@ nav #menu-icon {
   }
   .article_body {
     width: 100%;
-    padding: 0 50px;
+    padding: 0 20px;
   }
   .article .image {
     height: auto;
@@ -1196,7 +1197,7 @@ nav #menu-icon {
     color: white;
   }
   .category {
-    margin: 50px;
+    margin: 50px 20px;
   }
   .search {
     display: none;
@@ -1204,7 +1205,7 @@ nav #menu-icon {
 }
 
 .header.news {
-  background: url(../images/news.png) no-repeat center fixed;
+  background: url(../images/news.png) center center fixed no-repeat;
   background-size: cover;
 }
 
@@ -1235,7 +1236,7 @@ nav #menu-icon {
 }
 
 .header.policy {
-  background: url(../images/policy.png) no-repeat center fixed;
+  background: url(../images/policy.png) center center fixed no-repeat;
   background-size: cover;
 }
 
@@ -1370,7 +1371,7 @@ body .bold {
 
 body .header {
   height: 100vh;
-  background: url(../images/Maskgroup.png) no-repeat center center fixed;
+  background: url(../images/Maskgroup.png) center center fixed no-repeat;
   background-size: cover;
   /* Navbar container */
 }

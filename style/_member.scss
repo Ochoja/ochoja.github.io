@@ -1,7 +1,10 @@
 @import "mixins";
 
 .header.bg {
-  background: url(../images/memberbg1.png) no-repeat center;
+  background: url(../images/memberbg1.png) center center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
