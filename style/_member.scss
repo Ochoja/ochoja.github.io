@@ -132,3 +132,15 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .membership_category {
+    .grid {
+      button {
+        margin: 0;
+        font-size: 0.9em;
+        padding: 4px;
+      }
+    }
+  }
+}
