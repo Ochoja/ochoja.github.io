@@ -1217,7 +1217,7 @@ nav #menu-icon {
 }
 
 .header.news {
-  background: url(../images/news.png) center center fixed no-repeat;
+  background: url(../images/news.png) center center scroll no-repeat;
   background-size: cover;
 }
 
@@ -1228,6 +1228,8 @@ nav #menu-icon {
 .latest_news.media .news .cards {
   -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: auto;
+  width: 96%;
 }
 
 .latest_news.media .thin.date {

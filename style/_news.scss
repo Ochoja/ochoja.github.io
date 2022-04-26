@@ -1,5 +1,5 @@
 .header.news {
-  background: url(../images/news.png) center center fixed no-repeat;
+  background: url(../images/news.png) center center scroll no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,6 +12,8 @@
   .news {
     .cards {
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin: auto;
+      width: 96%;
     }
   }
 
