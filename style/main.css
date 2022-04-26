@@ -24,7 +24,7 @@
 }
 
 .header.agenda {
-  background: url(../images/agenda.png) center center fixed no-repeat;
+  background: url(../images/agenda.png) center center scroll no-repeat;
   background-size: cover;
 }
 
@@ -399,7 +399,7 @@
 }
 
 .header.bg {
-  background: url(../images/memberbg1.png) center center fixed no-repeat;
+  background: url(../images/memberbg1.png) center center scroll no-repeat;
   background-size: cover;
 }
 
@@ -581,8 +581,8 @@
 }
 
 .header.greenstart {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.1))), url(../images/greenstartbg.png) center center fixed no-repeat;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../images/greenstartbg.png) center center fixed no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.1))), url(../images/greenstartbg.png) center center scroll no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../images/greenstartbg.png) center center scroll no-repeat;
   background-size: cover;
 }
 
@@ -763,7 +763,7 @@ nav #menu-icon {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: -120%;
+    top: -150%;
     overflow: hidden;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
@@ -1250,7 +1250,7 @@ nav #menu-icon {
 }
 
 .header.policy {
-  background: url(../images/policy.png) center center fixed no-repeat;
+  background: url(../images/policy.png) center center scroll no-repeat;
   background-size: cover;
 }
 
