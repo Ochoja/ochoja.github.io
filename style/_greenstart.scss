@@ -1,5 +1,6 @@
 .header.greenstart {
-  background: url(../images/greenstartbg.png) center center fixed no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url(../images/greenstartbg.png) center center fixed no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
