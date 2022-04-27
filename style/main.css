@@ -169,6 +169,17 @@
   color: #40ba7b;
 }
 
+.key_focus .number_cards .image {
+  margin-bottom: 30px;
+}
+
+.key_focus .number_cards .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .action_words {
   width: 75%;
   margin: auto;
@@ -185,6 +196,17 @@
 
 .action_words .number_cards .md_heading {
   color: #40ba7b;
+}
+
+.action_words .number_cards .image {
+  margin-bottom: 30px;
+}
+
+.action_words .number_cards .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .md_heading.center.top_margin {
@@ -335,37 +357,42 @@
   }
 }
 
-.board {
-  width: 80%;
-  margin: 100px auto;
+.latest_news.team {
+  background: none;
+  padding-bottom: 100px;
 }
 
-.board .number_cards {
-  margin-top: 30px;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 40px 30px;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 10px 10px !important;
+.latest_news.team .news {
+  width: 90%;
+  padding-top: 0px;
 }
 
-.board .number_cards .md_heading {
-  color: #40ba7b;
-}
-
-.board .number_cards .bold {
-  margin-bottom: 10px;
-}
-
-.board .number_cards .thin {
-  color: #40ba7b;
-  font-weight: 400;
+.latest_news.team .news .thin {
+  width: 70%;
 }
 
 .latest_news.team .news .cards {
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  margin: auto;
+  width: 100%;
+  grid-row-gap: 60px;
+}
+
+.latest_news.team .news .cards .card .sm_heading {
+  margin-top: 30px;
+  padding-left: 30px;
+}
+
+.latest_news.team .news .cards .card .bold {
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .latest_news.team .news .thin {
+    width: 90%;
+  }
 }
 
 .other {
@@ -390,6 +417,81 @@
   }
 }
 
+.mission_vision_value {
+  width: 80%;
+  margin: 50px auto 100px auto;
+}
+
+.mission_vision_value .buttons {
+  margin-bottom: 20px;
+}
+
+.mission_vision_value .buttons .mission_btn {
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 1em;
+  padding: 10px 65px;
+  background: white;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px 8px 0 0;
+}
+
+.mission_vision_value .mission_btn.active {
+  color: white;
+  background: #40ba7b;
+}
+
+.mission_vision_value .mission_text {
+  display: none;
+  width: 40%;
+  margin-left: 40px;
+}
+
+.mission_vision_value .mission_text ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mission_vision_value .mission_text ul li {
+  font-weight: 300;
+}
+
+.mission_vision_value .mission_text ul li .iconify {
+  position: relative;
+  top: 7px;
+  margin-right: 10px;
+}
+
+.mission_vision_value .mission_text.show {
+  display: block;
+}
+
+@media screen and (max-width: 1005px) {
+  .mission_vision_value .mission_text {
+    width: 70%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .mission_vision_value .buttons .mission_btn {
+    padding: 10px 20px;
+  }
+  .mission_vision_value .mission_text {
+    width: 70%;
+  }
+}
+
+.advisory_council {
+  width: 74%;
+  margin: auto;
+}
+
+.advisory_council .thin {
+  width: 86%;
+}
+
 .md_heading.center.top_margin {
   width: 63%;
   margin: auto;
@@ -403,57 +505,12 @@
   background-size: cover;
 }
 
+.big_btn.all {
+  padding: 8px 25px;
+}
+
 .economy.bg_text {
   margin-top: 5px;
-}
-
-.membership_benefit {
-  background: url(../images/memberbenefit.png);
-  width: 90%;
-  margin: 150px auto 20px auto;
-  border-radius: 20px;
-  padding: 50px 40px 50px 40px;
-  margin-top: 40px;
-}
-
-.membership_benefit ul {
-  list-style-type: none;
-  padding-left: 0;
-  width: 50%;
-  margin-bottom: 20px;
-}
-
-.membership_benefit ul li {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 9fr;
-      grid-template-columns: 1fr 9fr;
-  margin-left: 10px;
-  font-weight: 300;
-  margin-bottom: 10px;
-}
-
-.membership_benefit ul li .text {
-  padding-top: 10px;
-}
-
-.membership_benefit ul .iconify {
-  position: relative;
-  top: 8px;
-}
-
-@media (max-width: 1000px) {
-  .membership_benefit ul {
-    width: 100%;
-  }
-  .membership_benefit ul li .text {
-    padding-left: 5px;
-  }
-}
-
-.membership_benefit ul,
-.membership_benefit .md_heading {
-  color: white;
 }
 
 .founding_members {
@@ -469,140 +526,268 @@
 .founding_members .img_grid {
   display: -ms-grid;
   display: grid;
-  grid-column-gap: 12px;
-  grid-row-gap: 40px;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  -ms-grid-columns: (minmax(190px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   width: 80%;
   text-align: center;
   margin: auto;
 }
 
-.join {
-  background: url(../images/greeneco.png) bottom;
-  padding: 10px 40px;
-  color: white;
-}
-
-.join .grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.membership_category {
-  background: url(../images/greeneco.png) no-repeat top;
-  background-size: 100% 60%;
-  padding-top: 50px;
-  margin-top: 20px;
-}
-
-.membership_category .md_heading {
-  width: 80%;
-  margin: auto;
-  color: white;
-}
-
-.membership_category .grid {
-  width: 80%;
-  margin: 50px auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.2fr;
-      grid-template-columns: 1fr 1.2fr;
-  grid-column-gap: 50px;
-}
-
-.membership_category .grid .img {
-  display: block;
-}
-
-.membership_category .grid .img img {
-  display: block;
-  width: 100%;
+.founding_members .img_grid .image img {
   height: 100%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.membership_category .grid button {
-  margin-top: 30px;
-  margin-bottom: 50px;
+.join {
+  background: url(../images/greeneco.png) bottom;
+  color: white;
+  text-align: center;
+  padding: 30px 0 50px 0;
 }
 
-.membership_category .grid .md_heading {
-  font-size: 1.8em;
-  margin: 0;
-  margin-bottom: 5px;
+.join .md_heading {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 10px;
 }
 
-.membership_category .grid .md_heading.bottom {
-  padding-top: 50px;
+.join .thin {
+  margin-bottom: 80px;
+}
+
+.join .md_btn {
+  border: none;
+  padding: 10px 20px;
+}
+
+.agenda_wrapper.news {
+  background: none;
+}
+
+.membership_category {
+  width: 80%;
+  margin: 60px auto;
+}
+
+.membership_category .wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.membership_category .wrapper .grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 50px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.membership_category .wrapper .grid .item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.5fr 1fr 2fr;
+      grid-template-rows: 0.5fr 1fr 2fr;
+}
+
+.membership_category .wrapper .grid .item .thin {
+  width: 70%;
+}
+
+.membership_category .wrapper .grid .item .pricing {
+  margin-bottom: 10px;
+}
+
+.membership_category .wrapper .grid .item .md_heading {
+  width: 100%;
+  color: #40ba7b;
+}
+
+.membership_category .wrapper .grid .sm_heading {
   color: black;
 }
 
-.membership_category .grid .sm_heading {
+@media screen and (max-width: 1000px) {
+  .membership_category .wrapper {
+    width: 100%;
+  }
+  .membership_category .wrapper .grid {
+    grid-gap: 20px;
+  }
+  .membership_category .wrapper .grid .item .thin {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .membership_category .wrapper {
+    width: 100%;
+  }
+  .membership_category .wrapper .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .membership_category .wrapper .grid .item .thin {
+    width: 100%;
+  }
+  .membership_category .big_btn.all {
+    position: relative;
+    top: -50px;
+  }
+}
+
+.promotion {
+  width: 80%;
+  margin: 150px auto;
+}
+
+.promotion .md_heading {
+  color: #40ba7b;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 969px) {
+  .promotion {
+    margin: 0px auto 50px auto;
+  }
+}
+
+@media (max-width: 719px) {
+  .economy_grid .img.responsive {
+    height: 40vh;
+  }
+}
+
+.membership_benefits {
+  background: #40ba7b;
   color: white;
-  width: 65%;
-  margin-bottom: 30px;
+  padding: 50px 0;
 }
 
-@media (max-width: 1200px) {
-  .membership_category {
-    background-size: cover;
-  }
-  .membership_category .grid {
-    width: 95%;
-    -ms-grid-columns: 3fr 1fr;
-        grid-template-columns: 3fr 1fr;
-    grid-gap: 0px;
-  }
-  .membership_category .grid img {
-    display: none !important;
-  }
-  .membership_category .grid button {
-    margin: 0;
-    padding: 4px;
-  }
-  .membership_category .grid .md_heading.bottom {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    color: black;
-  }
+.membership_benefits .wrapper {
+  width: 90%;
+  margin: auto;
 }
 
-@media (max-width: 600px) {
-  .membership_category .grid button {
-    margin: 0;
-    font-size: 0.9em;
-    padding: 4px;
-  }
+.membership_benefits .wrapper .md_heading {
+  margin-bottom: 50px;
+}
+
+.membership_benefits .wrapper .grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 50px;
+  text-align: center;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.membership_benefits .wrapper .grid .item {
+  text-align: center;
+}
+
+.membership_benefits .wrapper .grid .item .md_heading {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.membership_benefits .wrapper .grid .item .thin {
+  width: 90%;
+  margin: auto;
+}
+
+.membership_benefits .btn {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.membership_benefits .btn .md_btn {
+  border: none;
+  padding: 10px 20px;
+}
+
+.membership_benefits .sm_heading {
+  color: white;
 }
 
 .header.greenstart {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.1))), url(../images/greenstartbg.png) center center scroll no-repeat;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../images/greenstartbg.png) center center scroll no-repeat;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.1))), url(../images/yoebg.png) center center scroll no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../images/yoebg.png) center center scroll no-repeat;
+  background-size: fill;
 }
 
-.header.greenstart .heading.green {
-  color: #40ba7b;
+.greenstart_ad {
+  width: 50%;
+  margin: auto;
 }
 
-.economy.greenstart .md_heading {
+.greenstart_ad .md_heading {
   color: #40ba7b;
   margin-top: 80px;
+  width: 100%;
+  text-align: center;
 }
 
-.economy.greenstart .economy_grid .economy_description {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.greenstart_ad .bold {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
-.economy.greenstart .economy_grid .economy_description .bold {
-  margin-top: 50px;
+.greenstart_ad ul {
+  list-style: none;
+  padding: 0;
+  width: 30%;
+  margin: auto;
+}
+
+.greenstart_ad ul li {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.greenstart_ad ul li .iconify {
+  position: relative;
+  top: 7px;
+  margin-right: 10px;
+}
+
+.greenstart_ad .btn {
+  width: 30%;
+  margin: 40px auto 0 auto;
+}
+
+@media (max-width: 1235px) {
+  .greenstart_ad {
+    width: 80%;
+  }
+}
+
+@media (max-width: 662px) {
+  .greenstart_ad {
+    width: 80%;
+  }
+  .greenstart_ad .btn {
+    width: 60%;
+  }
+}
+
+@media (max-width: 653px) {
+  .greenstart_ad .md_heading {
+    margin-top: 40px;
+  }
+  .greenstart_ad ul {
+    width: 60%;
+  }
+  .greenstart_ad .bold {
+    width: 90%;
+    padding-bottom: 10px;
+  }
 }
 
 .economy.unemployment {
@@ -611,12 +796,26 @@
   padding-bottom: 10px;
 }
 
+.economy.unemployment .md_heading {
+  width: 100%;
+  color: #40ba7b;
+}
+
+@media screen and (max-width: 800px) {
+  .economy.economy.unemployment .economy_grid .img {
+    height: 40vh;
+    position: relative;
+    top: -20px;
+  }
+}
+
 .mission_wrapper {
-  background: url(../images/greeneco.png) no-repeat center center;
+  background: #40ba7b;
   padding: 20px 0;
 }
 
 .mission_wrapper .economy.mission {
+  background: transparent;
   color: white;
 }
 
@@ -626,11 +825,56 @@
   color: #40ba7b;
 }
 
-.economy.approach {
-  padding-top: 20px;
+@media screen and (max-width: 800px) {
+  .mission_wrapper .economy_grid .img {
+    height: 40vh;
+    position: relative;
+    top: -20px;
+  }
 }
 
-.manifesto {
+.economy.approach {
+  padding-top: 20px;
+  background: url(../images/landingpagebg.png) no-repeat bottom right;
+}
+
+.economy.approach .md_heading {
+  width: 100%;
+  color: #40ba7b;
+}
+
+.economy.approach .btn {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .economy.approach .img {
+    display: none;
+  }
+}
+
+.benefit {
+  width: 65%;
+  margin: 60px auto;
+}
+
+.benefit .md_heading {
+  color: #40ba7b;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .benefit {
+    width: 80%;
+  }
+}
+
+.agenda_wrapper.main {
+  background: none;
+}
+
+.agenda_wrapper.main .manifesto {
   background: linear-gradient(169deg, black 0%, black 35%, rgba(17, 1, 1, 0) 100%), url(../images/Group.png) right bottom;
   width: 90%;
   margin: 150px auto 20px auto;
@@ -640,14 +884,14 @@
   margin-bottom: 0;
 }
 
-.manifesto ul {
+.agenda_wrapper.main .manifesto ul {
   list-style-type: none;
   padding-left: 0;
   width: 50%;
   margin-bottom: 20px;
 }
 
-.manifesto ul li {
+.agenda_wrapper.main .manifesto ul li {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 9fr;
@@ -657,41 +901,42 @@
   margin-bottom: 10px;
 }
 
-.manifesto ul li .text {
+.agenda_wrapper.main .manifesto ul li .text {
   padding-top: 10px;
 }
 
-.manifesto ul .iconify {
+.agenda_wrapper.main .manifesto ul .iconify {
   position: relative;
   top: 8px;
 }
 
 @media (max-width: 1000px) {
-  .manifesto ul {
+  .agenda_wrapper.main .manifesto ul {
     width: 100%;
   }
-  .manifesto ul li .text {
+  .agenda_wrapper.main .manifesto ul li .text {
     padding-left: 5px;
   }
 }
 
-.manifesto ul,
-.manifesto .md_heading {
+.agenda_wrapper.main .manifesto ul,
+.agenda_wrapper.main .manifesto .md_heading {
   color: white;
 }
 
-.manifesto ul {
+.agenda_wrapper.main .manifesto ul {
   margin-bottom: 50px;
 }
 
-.manifesto button {
+.agenda_wrapper.main .manifesto button {
   margin-bottom: 100px;
 }
 
 nav {
   width: 100%;
   padding-bottom: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
+  background: white;
 }
 
 nav img {
@@ -712,7 +957,7 @@ nav ul {
 }
 
 nav ul a {
-  color: white;
+  color: black;
   font-weight: 600;
 }
 
@@ -741,6 +986,7 @@ nav #menu-icon {
 @media screen and (max-width: 1180px) {
   nav {
     border: none;
+    background: transparent;
   }
   nav img {
     margin-top: 20px;
@@ -771,6 +1017,9 @@ nav #menu-icon {
   nav ul li {
     font-size: 1.3em;
     font-weight: 600;
+  }
+  nav ul li a {
+    color: white;
   }
   nav ul.show {
     top: 0;
@@ -1544,13 +1793,17 @@ body .economy_description .bold {
   margin-bottom: 30px;
 }
 
+body .economy_description .md_heading {
+  width: 90%;
+}
+
 body .economy_description button {
   width: 180px;
 }
 
 @media (max-width: 1290px) {
   body .economy {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -1605,7 +1858,7 @@ body .what_we_do .thin {
 
 body .latest_news {
   background: url(../images/Layer1.png) no-repeat right top;
-  margin-left: auto;
+  margin: auto;
   padding-bottom: 50px;
 }
 
@@ -2001,7 +2254,7 @@ body footer .social_icons .item img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 775px) {
   body {
     font-size: 0.8em;
   }

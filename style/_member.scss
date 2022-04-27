@@ -8,20 +8,12 @@
   background-size: cover;
 }
 
-.economy.bg_text {
-  margin-top: 5px;
+.big_btn.all {
+  padding: 8px 25px;
 }
 
-.membership_benefit {
-  background: url(../images/memberbenefit.png);
-  @include black_green;
-  @include icon_list_sm;
-  margin-top: 40px;
-
-  ul,
-  .md_heading {
-    color: white;
-  }
+.economy.bg_text {
+  margin-top: 5px;
 }
 
 .founding_members {
@@ -34,113 +26,198 @@
   }
   .img_grid {
     display: grid;
-    grid-column-gap: 12px;
-    grid-row-gap: 40px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     width: 80%;
     text-align: center;
     margin: auto;
+
+    .image {
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
   }
 }
 
 .join {
   background: url(../images/greeneco.png) bottom;
-  padding: 10px 40px;
   color: white;
+  text-align: center;
+  padding: 30px 0 50px 0;
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  .md_heading {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 10px;
   }
+
+  .thin {
+    margin-bottom: 80px;
+  }
+
+  .md_btn {
+    border: none;
+    padding: 10px 20px;
+  }
+}
+
+.agenda_wrapper.news {
+  background: none;
 }
 
 .membership_category {
-  background: url(../images/greeneco.png) no-repeat top;
-  background-size: 100% 60%;
-  padding-top: 50px;
-  margin-top: 20px;
+  width: 80%;
+  margin: 60px auto;
 
-  .md_heading {
-    width: 80%;
-    margin: auto;
-    color: white;
-  }
-
-  .grid {
-    width: 80%;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    grid-column-gap: 50px;
-
-    .img {
-      display: block;
-      img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    }
-
-    button {
-      margin-top: 30px;
-      margin-bottom: 50px;
-    }
-
-    .md_heading {
-      font-size: 1.8em;
-      margin: 0;
-      margin-bottom: 5px;
-    }
-
-    .md_heading.bottom {
-      padding-top: 50px;
-      color: black;
-    }
-
-    .sm_heading {
-      color: white;
-      width: 65%;
-      margin-bottom: 30px;
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .membership_category {
-    background-size: cover;
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
 
     .grid {
-      width: 95%;
-      grid-template-columns: 3fr 1fr;
-      grid-gap: 0px;
-      img {
-        display: none !important;
+      display: grid;
+      grid-gap: 50px;
+      grid-template-columns: 1fr 1fr;
+
+      .item {
+        display: grid;
+        grid-template-rows: 0.5fr 1fr 2fr;
+
+        .thin {
+          width: 70%;
+        }
+
+        .pricing {
+          margin-bottom: 10px;
+        }
+
+        .md_heading {
+          width: 100%;
+          color: #40ba7b;
+        }
       }
 
-      button {
-        margin: 0;
-        padding: 4px;
-      }
-
-      .md_heading.bottom {
-        padding-top: 30px;
-        padding-bottom: 20px;
+      .sm_heading {
         color: black;
       }
     }
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .membership_category {
-    .grid {
-      button {
-        margin: 0;
-        font-size: 0.9em;
-        padding: 4px;
+    .wrapper {
+      width: 100%;
+      .grid {
+        grid-gap: 20px;
+        .item {
+          .thin {
+            width: 100%;
+          }
+        }
       }
     }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .membership_category {
+    .wrapper {
+      width: 100%;
+      .grid {
+        grid-template-columns: 1fr;
+
+        .item {
+          .thin {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .big_btn.all {
+      position: relative;
+      top: -50px;
+    }
+  }
+}
+
+.promotion {
+  width: 80%;
+  margin: 150px auto;
+
+  .md_heading {
+    color: #40ba7b;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 969px) {
+  .promotion {
+    margin: 0px auto 50px auto;
+  }
+}
+
+@media (max-width: 719px) {
+  .economy {
+    &_grid {
+      .img.responsive {
+        height: 40vh;
+      }
+    }
+  }
+}
+
+.membership_benefits {
+  background: #40ba7b;
+  color: white;
+  padding: 50px 0;
+
+  .wrapper {
+    width: 90%;
+    margin: auto;
+
+    .md_heading {
+      margin-bottom: 50px;
+    }
+
+    .grid {
+      display: grid;
+      grid-gap: 50px;
+      text-align: center;
+
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+      .item {
+        text-align: center;
+        .md_heading {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .thin {
+          width: 90%;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 80px;
+    text-align: center;
+
+    .md_btn {
+      border: none;
+      padding: 10px 20px;
+    }
+  }
+
+  .sm_heading {
+    color: white;
   }
 }

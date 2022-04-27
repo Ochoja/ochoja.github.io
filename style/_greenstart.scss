@@ -1,29 +1,84 @@
 .header.greenstart {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
-    url(../images/greenstartbg.png) center center scroll no-repeat;
+    url(../images/yoebg.png) center center scroll no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-
-  .heading.green {
-    color: #40ba7b;
-  }
+  background-size: fill;
 }
 
-.economy.greenstart {
+.greenstart_ad {
+  width: 50%;
+  margin: auto;
+
   .md_heading {
     color: #40ba7b;
     margin-top: 80px;
+    width: 100%;
+    text-align: center;
   }
 
-  .economy_grid {
-    .economy_description {
-      justify-content: flex-start;
+  .bold {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
 
-      .bold {
-        margin-top: 50px;
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 30%;
+    margin: auto;
+
+    li {
+      font-weight: 600;
+      margin-top: 10px;
+
+      .iconify {
+        position: relative;
+        top: 7px;
+        margin-right: 10px;
       }
+    }
+  }
+
+  .btn {
+    width: 30%;
+    margin: 40px auto 0 auto;
+  }
+}
+
+@media (max-width: 1235px) {
+  .greenstart_ad {
+    width: 80%;
+  }
+}
+
+@media (max-width: 662px) {
+  .greenstart_ad {
+    width: 80%;
+
+    .btn {
+      width: 60%;
+      // text-align: center;
+    }
+  }
+}
+
+@media (max-width: 653px) {
+  .greenstart_ad {
+    .md_heading {
+      margin-top: 40px;
+    }
+
+    ul {
+      width: 60%;
+    }
+
+    .bold {
+      width: 90%;
+      padding-bottom: 10px;
     }
   }
 }
@@ -32,13 +87,31 @@
   margin-top: 60px;
   background: none;
   padding-bottom: 10px;
+
+  .md_heading {
+    width: 100%;
+    color: #40ba7b;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .economy.economy.unemployment {
+    .economy_grid {
+      .img {
+        height: 40vh;
+        position: relative;
+        top: -20px;
+      }
+    }
+  }
 }
 
 .mission_wrapper {
-  background: url(../images/greeneco.png) no-repeat center center;
+  background: #40ba7b;
   padding: 20px 0;
 
   .economy.mission {
+    background: transparent;
     color: white;
 
     button {
@@ -49,33 +122,83 @@
   }
 }
 
-.economy.approach {
-  padding-top: 20px;
+@media screen and (max-width: 800px) {
+  .mission_wrapper {
+    .economy_grid {
+      .img {
+        height: 40vh;
+        position: relative;
+        top: -20px;
+      }
+    }
+  }
 }
 
-.manifesto {
-  background: linear-gradient(
-      169deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 1) 35%,
-      rgba(17, 1, 1, 0) 100%
-    ),
-    url(../images/Group.png) right bottom;
-  @include black_green;
-  @include icon_list_sm;
-  margin-top: 40px;
-  margin-bottom: 0;
+.economy.approach {
+  padding-top: 20px;
+  background: url(../images/landingpagebg.png) no-repeat bottom right;
 
-  ul,
   .md_heading {
-    color: white;
+    width: 100%;
+    color: #40ba7b;
   }
 
-  ul {
-    margin-bottom: 50px;
+  .btn {
+    margin-bottom: 30px;
   }
+}
 
-  button {
-    margin-bottom: 100px;
+@media screen and (max-width: 800px) {
+  .economy.approach {
+    .img {
+      display: none;
+    }
+  }
+}
+
+.benefit {
+  width: 65%;
+  margin: 60px auto;
+
+  .md_heading {
+    color: #40ba7b;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .benefit {
+    width: 80%;
+  }
+}
+
+.agenda_wrapper.main {
+  background: none;
+  .manifesto {
+    background: linear-gradient(
+        169deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 35%,
+        rgba(17, 1, 1, 0) 100%
+      ),
+      url(../images/Group.png) right bottom;
+    @include black_green;
+    @include icon_list_sm;
+    margin-top: 40px;
+    margin-bottom: 0;
+
+    ul,
+    .md_heading {
+      color: white;
+    }
+
+    ul {
+      margin-bottom: 50px;
+    }
+
+    button {
+      margin-bottom: 100px;
+    }
   }
 }

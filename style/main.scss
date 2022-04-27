@@ -390,6 +390,10 @@ body {
         margin-bottom: 30px;
       }
 
+      .md_heading {
+        width: 90%;
+      }
+
       button {
         width: 180px;
       }
@@ -398,7 +402,7 @@ body {
 
   @media (max-width: 1290px) {
     .economy {
-      width: 90%;
+      width: 80%;
     }
   }
 
@@ -469,7 +473,7 @@ body {
 
   .latest_news {
     background: url(../images/Layer1.png) no-repeat right top;
-    margin-left: auto;
+    margin: auto;
     padding-bottom: 50px;
 
     .news {
@@ -828,7 +832,8 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+//reduce font size when screen size reduces
+@media (max-width: 775px) {
   body {
     font-size: 0.8em;
 

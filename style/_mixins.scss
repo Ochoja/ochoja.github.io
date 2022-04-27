@@ -138,6 +138,16 @@ $accent-color: #40ba7b;
   .md_heading {
     color: $accent-color;
   }
+
+  .image {
+    margin-bottom: 30px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
 }
 
 @mixin icon_list {

@@ -64,29 +64,44 @@
   }
 }
 
-.board {
-  width: 80%;
-  margin: 100px auto;
-
-  .number_cards {
-    @include number_cards;
-    grid-gap: 10px 10px !important;
-
-    .bold {
-      margin-bottom: 10px;
-    }
+.latest_news.team {
+  background: none;
+  padding-bottom: 100px;
+  .news {
+    width: 90%;
+    padding-top: 0px;
 
     .thin {
-      color: $accent-color;
-      font-weight: 400;
+      width: 70%;
+    }
+
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      margin: auto;
+      width: 100%;
+      grid-row-gap: 60px;
+
+      .card {
+        .sm_heading {
+          margin-top: 30px;
+          padding-left: 30px;
+        }
+
+        .bold {
+          margin-bottom: 10px;
+          padding-left: 30px;
+        }
+      }
     }
   }
 }
 
-.latest_news.team {
-  .news {
-    .cards {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+@media screen and (max-width: 1000px) {
+  .latest_news.team {
+    .news {
+      .thin {
+        width: 90%;
+      }
     }
   }
 }
@@ -111,5 +126,86 @@
 
   .history {
     display: none;
+  }
+}
+
+.mission_vision_value {
+  width: 80%;
+  margin: 50px auto 100px auto;
+
+  .buttons {
+    margin-bottom: 20px;
+    .mission_btn {
+      cursor: pointer;
+      font-family: Roboto;
+      font-size: 1em;
+      padding: 10px 65px;
+      background: white;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px 8px 0 0;
+    }
+  }
+
+  .mission_btn.active {
+    color: white;
+    background: #40ba7b;
+  }
+
+  .mission_text {
+    display: none;
+    width: 40%;
+    margin-left: 40px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        font-weight: 300;
+
+        .iconify {
+          position: relative;
+          top: 7px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .mission_text.show {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .mission_vision_value {
+    .mission_text {
+      width: 70%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .mission_vision_value {
+    .buttons {
+      .mission_btn {
+        padding: 10px 20px;
+      }
+    }
+
+    .mission_text {
+      width: 70%;
+    }
+  }
+}
+
+.advisory_council {
+  width: 74%;
+  margin: auto;
+
+  .thin {
+    width: 86%;
   }
 }
