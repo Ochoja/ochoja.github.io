@@ -379,6 +379,10 @@
   grid-row-gap: 60px;
 }
 
+.latest_news.team .news .cards .card {
+  cursor: pointer;
+}
+
 .latest_news.team .news .cards .card .sm_heading {
   margin-top: 30px;
   padding-left: 30px;
@@ -552,6 +556,20 @@
 @media screen and (max-width: 1220px) {
   .popup .popup_modal {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .popup .popup_modal {
+    width: 90%;
+  }
+  .popup .popup_modal .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .popup .popup_modal .grid .image {
+    width: 200px;
+    height: 200px;
   }
 }
 

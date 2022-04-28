@@ -82,6 +82,7 @@
       grid-row-gap: 60px;
 
       .card {
+        cursor: pointer;
         .sm_heading {
           margin-top: 30px;
           padding-left: 30px;
@@ -271,6 +272,23 @@
   .popup {
     .popup_modal {
       width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .popup {
+    .popup_modal {
+      width: 90%;
+
+      .grid {
+        grid-template-columns: 1fr;
+
+        .image {
+          width: 200px;
+          height: 200px;
+        }
+      }
     }
   }
 }
