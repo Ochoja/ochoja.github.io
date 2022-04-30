@@ -385,16 +385,13 @@
 
 .latest_news.team .news .cards .card .sm_heading {
   margin-top: 30px;
-  padding-left: 30px;
-}
-
-.latest_news.team .news .cards .card .sm_heading {
   font-size: 1.3em;
+  padding-left: 10px;
 }
 
 .latest_news.team .news .cards .card .bold {
   margin-bottom: 10px;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -509,6 +506,7 @@
   width: 100vw;
   overflow: auto;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .popup_modal {
@@ -560,6 +558,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 600;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1220px) {
@@ -1044,9 +1043,13 @@
 
 nav {
   width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
   padding-bottom: 10px;
   border-bottom: 1px solid black;
   background: white;
+  z-index: 1;
 }
 
 nav img {
@@ -1097,6 +1100,7 @@ nav #menu-icon {
   nav {
     border: none;
     background: transparent;
+    position: static;
   }
   nav img {
     margin-top: 20px;
@@ -1644,6 +1648,7 @@ body .big_btn {
   border: none;
   background-color: #40ba7b;
   color: white;
+  z-index: -1;
 }
 
 body .big_btn .btn_text {
@@ -1662,6 +1667,7 @@ body .md_btn {
   margin-bottom: 10px;
   border: 1px solid black;
   background-color: #ffffff;
+  z-index: -1;
 }
 
 body .md_btn .btn_text {
@@ -1746,87 +1752,16 @@ body .header {
   height: 100vh;
   background: url(../images/Maskgroup.png) center center scroll no-repeat;
   background-size: cover;
-  /* Navbar container */
-}
-
-body .header .nav-items {
-  overflow: hidden;
-  margin-left: auto;
-  margin-top: 40px;
-  margin-right: 20px;
-  /* Links inside the navbar */
-  /* The dropdown container */
-  /* Show the dropdown menu on hover */
-  /* Dropdown content (hidden by default) */
-}
-
-body .header .nav-items a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-body .header .nav-items .dropdown {
-  float: left;
-  overflow: hidden;
-  /* Dropdown button */
-}
-
-body .header .nav-items .dropdown button {
-  background: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
-}
-
-body .header .nav-items .dropdown button:hover {
-  border-bottom: 3px solid #40ba7b;
-  padding-bottom: 15px;
-}
-
-body .header .nav-items .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-body .header .nav-items .dropdown-content {
-  display: none;
-  position: absolute;
-  margin-top: 2px;
-  background-color: #016937;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-body .header .nav-items .dropdown-content a {
-  float: none;
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-body .header .nav-items .dropdown-content a:hover {
-  background-color: #016937;
-}
-
-body .header .nav-items .dropdown-content a:hover {
-  background-color: #40ba7b;
 }
 
 body .landing_page {
   width: 78%;
-  height: 70vh;
+  height: 100vh;
   margin: auto;
   color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1839,13 +1774,18 @@ body .landing_page {
 body .landing_page .heading {
   font-size: 4em;
   font-weight: 800;
-  margin-top: -4px;
 }
 
 body .landing_page p {
   width: 70%;
   line-height: 25px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1180px) {
+  body .landing_page {
+    height: 80vh;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2096,7 +2036,7 @@ body .enterprise_voice .green {
 
 body .enterprise_voice .green input {
   font-family: "Roboto";
-  padding: 10px;
+  padding: 10px 20px 10px 0;
   border: none;
   background: #40ba7b;
   color: white;

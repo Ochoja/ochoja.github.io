@@ -85,16 +85,13 @@
         cursor: pointer;
         .sm_heading {
           margin-top: 30px;
-          padding-left: 30px;
-        }
-
-        .sm_heading {
           font-size: 1.3em;
+          padding-left: 10px;
         }
 
         .bold {
           margin-bottom: 10px;
-          padding-left: 30px;
+          padding-left: 10px;
         }
       }
     }
@@ -224,6 +221,7 @@
   width: 100vw;
   overflow: auto;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .popup_modal {
@@ -273,6 +271,7 @@
       font-family: "Roboto", sans-serif;
       font-size: 1em;
       font-weight: 600;
+      cursor: pointer;
     }
   }
 }
