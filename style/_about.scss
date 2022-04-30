@@ -88,6 +88,10 @@
           padding-left: 30px;
         }
 
+        .sm_heading {
+          font-size: 1.3em;
+        }
+
         .bold {
           margin-bottom: 10px;
           padding-left: 30px;
@@ -218,7 +222,7 @@
   right: 0;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow: auto;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -229,6 +233,7 @@
   margin: auto;
   padding: 50px 30px 10px 30px;
   border-radius: 10px;
+  overflow: auto;
 
   .grid {
     display: grid;
@@ -237,6 +242,10 @@
 
     .bold {
       margin-bottom: 5px;
+    }
+
+    .sm_heading {
+      font-size: 1.3em;
     }
 
     .thin {
@@ -288,6 +297,10 @@
           width: 200px;
           height: 200px;
         }
+      }
+
+      .close_btn {
+        margin-top: 30px;
       }
     }
   }
