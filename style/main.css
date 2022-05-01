@@ -844,9 +844,9 @@
   margin: 30px 40px 20px 40px;
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: 1.5fr 1fr;
-      grid-template-columns: 1.5fr 1fr;
+  grid-gap: 30px;
+  -ms-grid-columns: 1.4fr 1fr;
+      grid-template-columns: 1.4fr 1fr;
 }
 
 .greenstart_ad {
