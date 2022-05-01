@@ -280,6 +280,11 @@
   .popup {
     .popup_modal {
       width: 80%;
+      padding: 20px 20px 10px 20px;
+
+      .close_btn {
+        margin-top: 50px;
+      }
     }
   }
 }

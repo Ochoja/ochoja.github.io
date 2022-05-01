@@ -564,6 +564,10 @@
 @media screen and (max-width: 1220px) {
   .popup .popup_modal {
     width: 80%;
+    padding: 20px 20px 10px 20px;
+  }
+  .popup .popup_modal .close_btn {
+    margin-top: 50px;
   }
 }
 
