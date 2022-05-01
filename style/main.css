@@ -827,35 +827,40 @@
   color: white;
 }
 
+.md_heading.center.top_margin {
+  width: 63%;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
 .header.greenstart {
   background: url(../images/yoebg.png) center center scroll no-repeat;
   background-size: fill;
 }
 
+.promo {
+  margin: 30px 40px 20px 40px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+}
+
 .greenstart_ad {
-  width: 50%;
   margin: auto;
 }
 
 .greenstart_ad .md_heading {
   color: #40ba7b;
-  margin-top: 80px;
   width: 100%;
-  text-align: center;
-}
-
-.greenstart_ad .bold {
-  text-align: center;
-  width: 70%;
-  margin: auto;
-  padding-bottom: 20px;
 }
 
 .greenstart_ad ul {
   list-style: none;
   padding: 0;
-  width: 30%;
-  margin: auto;
 }
 
 .greenstart_ad ul li {
@@ -870,35 +875,20 @@
 }
 
 .greenstart_ad .btn {
-  width: 30%;
   margin: 40px auto 0 auto;
 }
 
 @media (max-width: 1235px) {
-  .greenstart_ad {
+  .promo {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     width: 80%;
+    margin: auto;
+    text-align: center;
   }
-}
-
-@media (max-width: 662px) {
-  .greenstart_ad {
-    width: 80%;
-  }
-  .greenstart_ad .btn {
-    width: 60%;
-  }
-}
-
-@media (max-width: 653px) {
-  .greenstart_ad .md_heading {
-    margin-top: 40px;
-  }
-  .greenstart_ad ul {
-    width: 60%;
-  }
-  .greenstart_ad .bold {
-    width: 90%;
-    padding-bottom: 10px;
+  .embed {
+    padding-top: 20px;
+    height: 40vh;
   }
 }
 
@@ -1042,6 +1032,61 @@
 
 .agenda_wrapper.main .manifesto button {
   margin-bottom: 100px;
+}
+
+.approachngr {
+  background: #40ba7b;
+  color: white;
+  padding: 30px 50px;
+}
+
+.approachngr .md_heading {
+  margin-bottom: 70px;
+  text-align: center;
+  width: 100%;
+}
+
+.approachngr .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 50px;
+}
+
+.approachngr .grid ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.approachngr .grid ul li {
+  margin-left: 10px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.approachngr .grid ul .iconify {
+  position: relative;
+  top: 8px;
+}
+
+.approachngr .grid ul {
+  width: 90%;
+  margin: auto;
+}
+
+.approachngr .grid ul li {
+  margin-left: 0;
+}
+
+.approachngr .grid .big {
+  font-weight: 600;
+}
+
+.approachngr .grid .big,
+.approachngr .grid .image {
+  margin-bottom: 10px;
+  margin-left: 50px;
 }
 
 nav {

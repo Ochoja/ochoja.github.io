@@ -1,3 +1,5 @@
+@import "mixins";
+
 .header.greenstart {
   background: url(../images/yoebg.png) center center scroll no-repeat;
   -webkit-background-size: cover;
@@ -6,29 +8,35 @@
   background-size: fill;
 }
 
+.promo {
+  margin: 30px 40px 20px 40px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1.5fr 1fr;
+}
 .greenstart_ad {
-  width: 50%;
+  // width: 50%;
   margin: auto;
 
   .md_heading {
     color: #40ba7b;
-    margin-top: 80px;
+    // margin-top: 80px;
     width: 100%;
-    text-align: center;
+    // text-align: center;
   }
 
-  .bold {
-    text-align: center;
-    width: 70%;
-    margin: auto;
-    padding-bottom: 20px;
-  }
+  // .bold {
+  //   text-align: center;
+  //   width: 70%;
+  //   margin: auto;
+  //   padding-bottom: 20px;
+  // }
 
   ul {
     list-style: none;
     padding: 0;
-    width: 30%;
-    margin: auto;
+    // width: 30%;
+    // margin: auto;
 
     li {
       font-weight: 600;
@@ -43,44 +51,58 @@
   }
 
   .btn {
-    width: 30%;
+    // width: 30%;
     margin: 40px auto 0 auto;
   }
 }
 
 @media (max-width: 1235px) {
-  .greenstart_ad {
+  .promo {
+    grid-template-columns: 1fr;
     width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .embed {
+    padding-top: 20px;
+    height: 40vh;
   }
 }
 
-@media (max-width: 662px) {
-  .greenstart_ad {
-    width: 80%;
+// @media (max-width: 1235px) {
+//   .greenstart_ad {
+//     width: 80%;
+//   }
+// }
 
-    .btn {
-      width: 60%;
-      // text-align: center;
-    }
-  }
-}
+// @media (max-width: 662px) {
+//   .greenstart_ad {
+//     width: 80%;
 
-@media (max-width: 653px) {
-  .greenstart_ad {
-    .md_heading {
-      margin-top: 40px;
-    }
+//     .btn {
+//       width: 60%;
+//       // text-align: center;
+//     }
+//   }
+// }
 
-    ul {
-      width: 60%;
-    }
+// @media (max-width: 653px) {
+//   .greenstart_ad {
+//     .md_heading {
+//       margin-top: 40px;
+//     }
 
-    .bold {
-      width: 90%;
-      padding-bottom: 10px;
-    }
-  }
-}
+//     ul {
+//       width: 60%;
+//     }
+
+//     .bold {
+//       width: 90%;
+//       padding-bottom: 10px;
+//     }
+//   }
+// }
 
 .economy.unemployment {
   margin-top: 60px;
@@ -198,6 +220,53 @@
 
     button {
       margin-bottom: 100px;
+    }
+  }
+}
+
+.approachngr {
+  background: #40ba7b;
+  color: white;
+  padding: 30px 50px;
+
+  .md_heading {
+    margin-bottom: 70px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-row-gap: 50px;
+    @include icon_list;
+
+    ul {
+      width: 90%;
+      margin: auto;
+      li {
+        margin-left: 0;
+      }
+    }
+
+    .big {
+      font-weight: 600;
+    }
+
+    // .image {
+    //   width: 20%;
+
+    //   img {
+    //     height: 100%;
+    //     width: 100%;
+    //     object-fit: contain;
+    //   }
+    // }
+
+    .big,
+    .image {
+      margin-bottom: 10px;
+      margin-left: 50px;
     }
   }
 }
