@@ -1281,19 +1281,23 @@ nav #menu-icon {
 
 @media screen and (max-width: 969px) {
   .contact .grid {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
     grid-column-gap: 30px;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     width: 90%;
     margin: auto;
   }
   .contact .grid .form {
     margin: 10px 0px;
-    width: 50%;
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 758px) {
+@media screen and (max-width: 890px) {
+  .contact .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
   .contact .grid .form {
     width: 75%;
   }
@@ -1355,6 +1359,15 @@ nav #menu-icon {
 
 .contact_icons .social_icons .item {
   margin-right: 10px;
+}
+
+@media (max-width: 890px) {
+  .contact_icons {
+    padding-left: 10px;
+  }
+  .contact_icons .social_icons {
+    padding-top: 0px;
+  }
 }
 
 .media_events {
