@@ -422,68 +422,75 @@
   }
 }
 
-.mission_vision_value {
-  width: 80%;
-  margin: 50px auto 100px auto;
+.mission_vision {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border: 1px solid #40ba7b;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
-.mission_vision_value .buttons {
-  margin-bottom: 20px;
+.mission_vision ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.mission_vision_value .buttons .mission_btn {
-  cursor: pointer;
-  font-family: Roboto;
-  font-size: 1em;
-  padding: 10px 65px;
-  background: white;
-  border: 1px solid #c4c4c4;
-  border-radius: 8px 8px 0 0;
-}
-
-.mission_vision_value .mission_btn.active {
-  color: white;
-  background: #40ba7b;
-}
-
-.mission_vision_value .mission_text {
-  display: none;
-  width: 40%;
-  margin-left: 40px;
-}
-
-.mission_vision_value .mission_text ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.mission_vision_value .mission_text ul li {
+.mission_vision ul li {
+  margin-left: 10px;
   font-weight: 300;
+  margin-bottom: 10px;
 }
 
-.mission_vision_value .mission_text ul li .iconify {
+.mission_vision ul .iconify {
   position: relative;
-  top: 7px;
-  margin-right: 10px;
+  top: 8px;
 }
 
-.mission_vision_value .mission_text.show {
-  display: block;
+.mission_vision .sm_heading {
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
-@media screen and (max-width: 1005px) {
-  .mission_vision_value .mission_text {
-    width: 70%;
-    margin-left: 0;
+.mission_vision ul {
+  width: 60%;
+  margin: auto;
+}
+
+.mission_vision .thin {
+  text-align: center;
+}
+
+.mission_vision .green,
+.mission_vision .white {
+  padding: 10px;
+}
+
+.mission_vision .green {
+  background: #40ba7b;
+  color: white;
+}
+
+.mission_vision .green .sm_heading {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .mission_vision {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 80%;
+    margin: 50px auto;
+  }
+  .mission_vision ul {
+    width: 30%;
   }
 }
 
-@media screen and (max-width: 690px) {
-  .mission_vision_value .buttons .mission_btn {
-    padding: 10px 20px;
-  }
-  .mission_vision_value .mission_text {
+@media (max-width: 698px) {
+  .mission_vision ul {
     width: 70%;
   }
 }
