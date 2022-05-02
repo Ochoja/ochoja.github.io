@@ -581,7 +581,7 @@
 @media screen and (max-width: 678px) {
   .popup .popup_modal {
     width: 90%;
-    padding: 10px;
+    padding: 15px;
   }
   .popup .popup_modal .grid {
     -ms-grid-columns: 1fr;
