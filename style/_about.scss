@@ -351,6 +351,7 @@
   .popup {
     .popup_modal {
       width: 90%;
+      padding: 10px;
 
       .grid {
         grid-template-columns: 1fr;
@@ -362,7 +363,7 @@
       }
 
       .close_btn {
-        margin-top: 30px;
+        margin-top: 20px;
       }
     }
   }
