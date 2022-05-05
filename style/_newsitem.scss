@@ -166,7 +166,6 @@
 
     &_detail {
       width: 100%;
-      font-size: 0.87em;
     }
 
     &_body {
@@ -205,5 +204,15 @@
 
   .search {
     display: none;
+  }
+}
+
+@media (max-width: 678px) {
+  .article {
+    &_detail {
+      .child {
+        font-size: 0.8em;
+      }
+    }
   }
 }

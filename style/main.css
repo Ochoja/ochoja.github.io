@@ -1711,7 +1711,6 @@ nav #menu-icon {
   }
   .article_detail {
     width: 100%;
-    font-size: 0.87em;
   }
   .article_body {
     width: 100%;
@@ -1738,6 +1737,12 @@ nav #menu-icon {
   }
   .search {
     display: none;
+  }
+}
+
+@media (max-width: 678px) {
+  .article_detail .child {
+    font-size: 0.8em;
   }
 }
 
