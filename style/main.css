@@ -1710,10 +1710,10 @@ nav #menu-icon {
         grid-template-columns: 1fr;
   }
   .article_detail {
-    width: 100%;
+    width: 99%;
   }
   .article_body {
-    width: 100%;
+    width: 99%;
     padding: 0 20px;
   }
   .article .image {
