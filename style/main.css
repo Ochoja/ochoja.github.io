@@ -1118,10 +1118,22 @@
 
 .approachngr .grid ul li {
   margin-left: 0;
+  margin-top: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 6fr;
+      grid-template-columns: 1fr 6fr;
+  grid-gap: 5px;
+}
+
+.approachngr .grid ul li .iconify {
+  position: relative;
+  top: -3px;
 }
 
 .approachngr .grid .big {
   font-weight: 600;
+  margin-bottom: 50px;
 }
 
 .approachngr .grid .big,

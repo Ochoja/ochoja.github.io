@@ -276,11 +276,21 @@
       margin: auto;
       li {
         margin-left: 0;
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-gap: 5px;
+
+        .iconify {
+          position: relative;
+          top: -3px;
+        }
       }
     }
 
     .big {
       font-weight: 600;
+      margin-bottom: 50px;
     }
 
     // .image {
