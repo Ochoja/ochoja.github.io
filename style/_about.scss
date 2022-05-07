@@ -32,6 +32,16 @@
   }
 }
 
+.center_heading {
+  width: 100%;
+  text-align: center;
+
+  .md_heading {
+    width: 80%;
+    margin: auto;
+  }
+}
+
 .economy {
   &_grid {
     .arrow {
@@ -42,6 +52,20 @@
           padding-top: 12px;
           padding-left: 6px;
         }
+      }
+    }
+
+    .economy_description.about {
+      padding-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 597px) {
+  .economy {
+    &_grid {
+      .economy_description.about {
+        padding-top: 0;
       }
     }
   }

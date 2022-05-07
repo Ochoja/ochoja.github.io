@@ -290,6 +290,16 @@
   }
 }
 
+.center_heading {
+  width: 100%;
+  text-align: center;
+}
+
+.center_heading .md_heading {
+  width: 80%;
+  margin: auto;
+}
+
 .economy_grid .arrow li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,6 +309,16 @@
 .economy_grid .arrow li .text {
   padding-top: 12px;
   padding-left: 6px;
+}
+
+.economy_grid .economy_description.about {
+  padding-top: 30px;
+}
+
+@media (max-width: 597px) {
+  .economy_grid .economy_description.about {
+    padding-top: 0;
+  }
 }
 
 .team {
