@@ -1587,6 +1587,7 @@ nav #menu-icon {
 .article .image {
   height: auto;
   width: 100%;
+  margin-bottom: 12px;
 }
 
 .article .image img {
