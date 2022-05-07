@@ -14,6 +14,14 @@
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       margin: auto;
       width: 96%;
+
+      .card {
+        .image {
+          img {
+            border-radius: 8px;
+          }
+        }
+      }
     }
   }
 

@@ -67,8 +67,8 @@
 .agenda_wrapper .agenda_news .news .cards .card .image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 @media (max-width: 718px) {
@@ -357,8 +357,8 @@
 .team .team_body .news .cards .card .image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 @media (max-width: 718px) {
@@ -1544,21 +1544,7 @@ nav #menu-icon {
   }
 }
 
-.article_header nav {
-  border-bottom: 1px solid black;
-}
-
-.article_header nav ul a {
-  color: black;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.article_header nav ul a:hover {
-  color: green;
-}
-
-.article_header nav i {
+.article_header i {
   color: black;
 }
 
@@ -1570,7 +1556,8 @@ nav #menu-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50px 0 50px 100px;
+  padding-top: 30px;
+  margin: 100px 0 50px 100px;
 }
 
 .category .child {
@@ -1639,6 +1626,17 @@ nav #menu-icon {
   font-weight: 300;
 }
 
+.article_body .article_text p em {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.article_body .article_text ul li,
+.article_body .article_text ol li {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
 .article_body .tag {
   font-size: 0.8em;
 }
@@ -1689,12 +1687,12 @@ nav #menu-icon {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
+  z-index: -2;
 }
 
 .article .search .iconify.search {
   float: right;
   position: relative;
-  z-index: 2;
 }
 
 .article .search label {
@@ -1780,6 +1778,10 @@ nav #menu-icon {
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin: auto;
   width: 96%;
+}
+
+.latest_news.media .news .cards .card .image img {
+  border-radius: 8px;
 }
 
 .latest_news.media .thin.date {
