@@ -1871,6 +1871,12 @@ body .md_btn .btn_text {
   top: -8px;
 }
 
+body .md_btn.green {
+  background: #40ba7b;
+  color: #ffffff;
+  border: none;
+}
+
 body .iconify {
   background-color: white;
   border-radius: 25px;
