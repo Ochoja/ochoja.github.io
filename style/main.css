@@ -180,6 +180,12 @@
      object-fit: contain;
 }
 
+@media (max-width: 619px) {
+  .key_focus {
+    width: 100%;
+  }
+}
+
 .action_words {
   width: 75%;
   margin: auto;
