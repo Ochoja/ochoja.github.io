@@ -687,3 +687,10 @@ body {
     }
   }
 }
+
+@media (min-width: 2000px) {
+  body {
+    width: 60%;
+    margin: auto;
+  }
+}

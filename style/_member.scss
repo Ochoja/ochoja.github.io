@@ -84,14 +84,10 @@
 
       .item {
         display: grid;
-        grid-template-rows: 0.5fr 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
 
         .thin {
           width: 70%;
-        }
-
-        .pricing {
-          margin-bottom: 10px;
         }
 
         .md_heading {
@@ -99,11 +95,11 @@
           color: #40ba7b;
         }
       }
-
-      .sm_heading {
-        color: black;
-      }
     }
+  }
+
+  .btn_all {
+    margin-top: 50px;
   }
 }
 

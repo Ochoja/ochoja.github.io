@@ -103,3 +103,19 @@ nav {
     display: none;
   }
 }
+
+@media (min-width: 1700px) {
+  nav {
+    width: 70%;
+    right: auto;
+    left: auto;
+  }
+}
+
+@media (min-width: 2000px) {
+  nav {
+    width: 60%;
+    right: auto;
+    left: auto;
+  }
+}
