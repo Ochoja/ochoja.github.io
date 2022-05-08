@@ -2266,6 +2266,7 @@ body .enterprise_voice .green input::-webkit-input-placeholder {
   font-weight: 300;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 5px;
+  margin-right: 0;
 }
 
 body .enterprise_voice .green input:-ms-input-placeholder {
@@ -2275,6 +2276,7 @@ body .enterprise_voice .green input:-ms-input-placeholder {
   font-weight: 300;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 5px;
+  margin-right: 0;
 }
 
 body .enterprise_voice .green input::-ms-input-placeholder {
@@ -2284,6 +2286,7 @@ body .enterprise_voice .green input::-ms-input-placeholder {
   font-weight: 300;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 5px;
+  margin-right: 0;
 }
 
 body .enterprise_voice .green input::placeholder {
@@ -2293,6 +2296,7 @@ body .enterprise_voice .green input::placeholder {
   font-weight: 300;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 5px;
+  margin-right: 0;
 }
 
 body .enterprise_voice .green button {
