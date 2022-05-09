@@ -2276,7 +2276,7 @@ body .enterprise_voice .green {
 
 body .enterprise_voice .green input {
   font-family: "Roboto";
-  padding: 10px 20px 10px 0;
+  padding: 10px 30px 10px 5px;
   border: none;
   background: #40ba7b;
   color: white;
