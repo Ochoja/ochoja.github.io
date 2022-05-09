@@ -301,6 +301,7 @@
 }
 
 .center_heading {
+  padding-top: 80px;
   width: 100%;
   text-align: center;
 }
@@ -389,7 +390,7 @@
 
 .latest_news.team {
   background: none;
-  padding-bottom: 100px;
+  padding-top: 90px;
 }
 
 .latest_news.team .news {
@@ -527,7 +528,7 @@
 
 .advisory_council {
   width: 74%;
-  margin: auto;
+  margin: 100px auto 0 auto;
 }
 
 .advisory_council .thin {
@@ -2035,6 +2036,21 @@ body .economy .img img {
      object-fit: contain;
 }
 
+body .economy .img.history {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 50px;
+}
+
 body .economy_grid {
   display: -ms-grid;
   display: grid;
@@ -2085,9 +2101,16 @@ body .economy_description button {
   body .economy {
     width: 95%;
   }
+  body .economy .img.history {
+    height: 50vh;
+    margin-top: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 818px) {
   body .economy_grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

@@ -33,6 +33,7 @@
 }
 
 .center_heading {
+  padding-top: 80px;
   width: 100%;
   text-align: center;
 
@@ -90,7 +91,7 @@
 
 .latest_news.team {
   background: none;
-  padding-bottom: 100px;
+  padding-top: 90px;
   .news {
     width: 90%;
     padding-top: 0px;
@@ -155,78 +156,6 @@
   }
 }
 
-// .mission_vision_value {
-//   width: 80%;
-//   margin: 50px auto 100px auto;
-
-//   .buttons {
-//     margin-bottom: 20px;
-//     .mission_btn {
-//       cursor: pointer;
-//       font-family: Roboto;
-//       font-size: 1em;
-//       padding: 10px 65px;
-//       background: white;
-//       border: 1px solid #c4c4c4;
-//       border-radius: 8px 8px 0 0;
-//     }
-//   }
-
-//   .mission_btn.active {
-//     color: white;
-//     background: #40ba7b;
-//   }
-
-//   .mission_text {
-//     display: none;
-//     width: 40%;
-//     margin-left: 40px;
-
-//     ul {
-//       list-style: none;
-//       margin: 0;
-//       padding: 0;
-
-//       li {
-//         font-weight: 300;
-
-//         .iconify {
-//           position: relative;
-//           top: 7px;
-//           margin-right: 10px;
-//         }
-//       }
-//     }
-//   }
-
-//   .mission_text.show {
-//     display: block;
-//   }
-// }
-
-// @media screen and (max-width: 1005px) {
-//   .mission_vision_value {
-//     .mission_text {
-//       width: 70%;
-//       margin-left: 0;
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 690px) {
-//   .mission_vision_value {
-//     .buttons {
-//       .mission_btn {
-//         padding: 10px 20px;
-//       }
-//     }
-
-//     .mission_text {
-//       width: 70%;
-//     }
-//   }
-// }
-
 .mission_vision {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -287,7 +216,7 @@
 
 .advisory_council {
   width: 74%;
-  margin: auto;
+  margin: 100px auto 0 auto;
 
   .thin {
     width: 86%;

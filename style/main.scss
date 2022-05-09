@@ -215,6 +215,14 @@ body {
       }
     }
 
+    .img.history {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-top: 50px;
+    }
+
     &_grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -258,10 +266,16 @@ body {
   @media (max-width: 850px) {
     .economy {
       width: 95%;
+
+      .img.history {
+        height: 50vh;
+        margin-top: 0;
+        justify-content: flex-start;
+      }
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 818px) {
     .economy {
       &_grid {
         grid-template-columns: 1fr;
