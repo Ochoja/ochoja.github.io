@@ -2280,6 +2280,7 @@ body .enterprise_voice .green input {
   border: none;
   background: #40ba7b;
   color: white;
+  width: 90%;
 }
 
 body .enterprise_voice .green input::-webkit-input-placeholder {
@@ -2329,6 +2330,12 @@ body .enterprise_voice .green button {
   padding: 10px 20px;
   border: none;
   color: #40ba7b;
+}
+
+@media (max-width: 916px) {
+  body .enterprise_voice .green input {
+    width: auto;
+  }
 }
 
 body .enterprise_voice .voice {
