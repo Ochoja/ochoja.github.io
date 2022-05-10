@@ -1842,7 +1842,8 @@ nav #menu-icon {
 
 body {
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.4px;
+  word-spacing: 3.5px;
 }
 
 body a {
@@ -1937,6 +1938,13 @@ body .sm_heading {
   font-weight: 600;
   margin-bottom: 10px;
   color: #40ba7b;
+}
+
+body .thin,
+body .bold,
+body .text,
+body p {
+  line-height: 23px;
 }
 
 body .thin {
