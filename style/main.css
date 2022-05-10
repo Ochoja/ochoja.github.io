@@ -680,8 +680,8 @@
   display: grid;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  -ms-grid-columns: (minmax(190px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   width: 80%;
   text-align: center;
   margin: auto;
