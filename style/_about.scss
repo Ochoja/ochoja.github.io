@@ -240,7 +240,7 @@
   background: white;
   width: 50%;
   margin: auto;
-  padding: 50px 30px 10px 30px;
+  padding: 20px;
   border-radius: 10px;
   overflow: auto;
 
@@ -270,7 +270,7 @@
   }
 
   .close_btn {
-    margin-top: 80px;
+    margin-top: 50px;
     text-align: center;
 
     .close_popup {
@@ -291,10 +291,10 @@
   .popup {
     .popup_modal {
       width: 80%;
-      padding: 20px 20px 10px 20px;
+      padding: 16px;
 
       .close_btn {
-        margin-top: 50px;
+        margin-top: 30px;
       }
     }
   }
@@ -316,7 +316,7 @@
       }
 
       .close_btn {
-        margin-top: 20px;
+        margin-top: 15px;
       }
     }
   }

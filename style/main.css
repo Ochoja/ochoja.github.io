@@ -552,7 +552,7 @@
   background: white;
   width: 50%;
   margin: auto;
-  padding: 50px 30px 10px 30px;
+  padding: 20px;
   border-radius: 10px;
   overflow: auto;
 }
@@ -583,7 +583,7 @@
 }
 
 .popup_modal .close_btn {
-  margin-top: 80px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -602,10 +602,10 @@
 @media screen and (max-width: 1220px) {
   .popup .popup_modal {
     width: 80%;
-    padding: 20px 20px 10px 20px;
+    padding: 16px;
   }
   .popup .popup_modal .close_btn {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
@@ -623,7 +623,7 @@
     height: 200px;
   }
   .popup .popup_modal .close_btn {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
