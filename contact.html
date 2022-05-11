@@ -128,22 +128,30 @@
 
         <div class="form">
           <div class="md_heading">Get In Touch</div>
-          <form action="">
+          <form
+            action="https://formsubmit.co/danielochoja@gmail.com"
+            method="POST"
+          >
             <div>
               <label for="name">FULL NAME</label>
-              <input type="text" size="30" />
+              <input type="text" size="30" name="name" id="name" required />
             </div>
 
             <div>
               <label for="email">EMAIL ADDRESS</label>
-              <input type="e-mail" size="30" />
+              <input type="e-mail" size="30" name="email" id="email" required />
             </div>
 
             <div>
               <label for="message">MESSAGE</label>
-              <textarea rows="6" cols="30"></textarea>
+              <textarea rows="6" cols="30" name="message" required></textarea>
             </div>
 
+            <input
+              type="hidden"
+              name="_next"
+              value="http://enterprisengr.online/contact.html"
+            />
             <div class="btn">
               <button>Submit</button>
             </div>
